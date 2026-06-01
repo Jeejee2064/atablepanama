@@ -64,7 +64,7 @@ export default function ClickableImage({ src, alt, fill, width, height, classNam
               exit={{ scale: 0.92, opacity: 0 }}
               transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
               className="relative max-w-5xl max-h-[90vh] w-full h-full"
-              onClick={e => e.stopPropagation()}
+              onClick={close}
             >
               <Image
                 src={src}

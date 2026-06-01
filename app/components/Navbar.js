@@ -38,7 +38,7 @@ export default function Navbar() {
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? 'bg-noir/95 backdrop-blur-md border-b border-gold/10 py-3'
+            ? 'bg-[#faf8f3]/95 backdrop-blur-md border-b border-gold/20 py-3'
             : 'bg-transparent py-6'
         }`}
       >
@@ -47,14 +47,14 @@ export default function Navbar() {
           <a href="#" onClick={e => scrollTo(e, 'body')} className="flex items-center gap-3 group">
             <div className="w-10 h-10 relative flex-shrink-0">
               <Image
-                src="/logoWhite.svg"
+                src={scrolled ? "/logoBlack.svg" : "/logoWhite.svg"}
                 alt="À table Panama"
                 fill
                 className="object-contain"
                 priority
               />
             </div>
-            <span className="font-display text-lg tracking-[0.25em] text-cream/90 uppercase group-hover:text-gold transition-colors duration-300">
+            <span className={`font-display text-lg tracking-[0.25em] uppercase group-hover:text-gold transition-colors duration-300 ${scrolled ? "text-[#111111]/90" : "text-cream/90"}`}>
               À table
             </span>
           </a>
@@ -66,7 +66,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={e => scrollTo(e, link.href)}
-                className="text-[11px] tracking-[0.2em] uppercase text-cream/80 hover:text-gold transition-colors duration-300 font-medium"
+                className={`text-[11px] tracking-[0.2em] uppercase transition-colors duration-300 font-medium ${scrolled ? "text-[#111111]/80 hover:text-gold" : "text-cream/85 hover:text-gold"}`}
               >
                 {link.label}
               </a>
@@ -84,7 +84,7 @@ export default function Navbar() {
                   className={`text-[10px] tracking-[0.15em] uppercase transition-all duration-300 font-medium ${
                     lang === l
                       ? 'text-gold'
-                      : 'text-cream/55 hover:text-cream/85'
+                      : scrolled ? 'text-[#111111]/55 hover:text-[#111111]/85' : 'text-cream/55 hover:text-cream/85'
                   }`}
                 >
                   {l}
@@ -100,15 +100,15 @@ export default function Navbar() {
             >
               <motion.span
                 animate={menuOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
-                className="block h-px w-6 bg-cream/70 origin-center transition-colors"
+                className="block h-px w-6 bg-[#faf8f3]/70 origin-center transition-colors"
               />
               <motion.span
                 animate={menuOpen ? { opacity: 0 } : { opacity: 1 }}
-                className="block h-px w-4 bg-cream/70"
+                className="block h-px w-4 bg-[#faf8f3]/70"
               />
               <motion.span
                 animate={menuOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
-                className="block h-px w-6 bg-cream/70 origin-center"
+                className="block h-px w-6 bg-[#faf8f3]/70 origin-center"
               />
             </button>
           </div>
@@ -123,7 +123,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-noir/98 backdrop-blur-lg flex flex-col items-center justify-center gap-10 md:hidden"
+            className="fixed inset-0 z-40 bg-[#faf8f3]/98 backdrop-blur-lg flex flex-col items-center justify-center gap-10 md:hidden"
           >
             {navLinks.map((link, i) => (
               <motion.a
@@ -133,7 +133,7 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 + i * 0.08 }}
-                className="font-display text-4xl text-cream/80 hover:text-gold transition-colors duration-300 italic"
+                className="font-display text-4xl text-[#111111] hover:text-gold transition-colors duration-300 italic"
               >
                 {link.label}
               </motion.a>

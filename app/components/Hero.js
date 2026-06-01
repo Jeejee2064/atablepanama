@@ -56,8 +56,8 @@ export default function Hero() {
         </motion.div>
       ))}
 
-      <div className="absolute inset-0 bg-gradient-to-b from-[#111]/25 via-transparent to-[#161616]/70 z-10" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#111]/25 to-transparent z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0a1628]/30 via-transparent to-[#0a1628]/75 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/25 to-transparent z-10" />
 
       {/* Content */}
       <motion.div

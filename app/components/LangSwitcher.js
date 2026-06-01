@@ -23,7 +23,7 @@ export default function LangSwitcher({ currentLang, slugMap }) {
           key={l}
           onClick={() => switchLang(l)}
           className={`text-[10px] tracking-[0.15em] uppercase transition-all duration-300 font-medium ${
-            currentLang === l ? 'text-gold' : 'text-cream/55 hover:text-cream/85'
+            currentLang === l ? 'text-gold' : 'text-[#111111]/55 hover:text-[#111111]/85'
           }`}
         >
           {l}

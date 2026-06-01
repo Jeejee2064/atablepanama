@@ -40,7 +40,7 @@ function MemberCard({ member, data, index }) {
         {/* Corner accents */}
         <div className="absolute top-4 left-4 w-7 h-7 border-t border-l border-gold/35" />
         <div className="absolute bottom-4 right-4 w-7 h-7 border-b border-r border-gold/35" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#161616]/70 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#f5f1e8]/70 via-transparent to-transparent" />
       </div>
 
       <div className="px-1">
@@ -48,8 +48,8 @@ function MemberCard({ member, data, index }) {
           <span className="w-5 h-px bg-gold" />
           <p className="text-[9px] tracking-[0.3em] uppercase text-gold font-medium">{data.role}</p>
         </div>
-        <h3 className="font-display text-4xl font-light text-cream mb-3">{data.name}</h3>
-        <p className="text-cream/80 text-base leading-relaxed font-light tracking-wide">{data.bio}</p>
+        <h3 className="font-display text-4xl font-light text-[#111111] mb-3">{data.name}</h3>
+        <p className="text-[#111111]/80 text-base leading-relaxed font-light tracking-wide">{data.bio}</p>
       </div>
     </motion.div>
   );
@@ -61,7 +61,7 @@ export default function Team() {
   const titleInView = useInView(titleRef, { once: true, margin: '-12%' });
 
   return (
-    <section id="team" className="section-pad bg-[#161616] relative overflow-hidden">
+    <section id="team" className="section-pad relative overflow-hidden" style={{ background: "linear-gradient(135deg, #f5f1e8 0%, #edf0f8 100%)" }}>
       <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12">
         <div ref={titleRef} className="mb-16 lg:mb-24">
           <motion.p
@@ -76,7 +76,7 @@ export default function Team() {
             initial={{ opacity: 0, y: 35 }}
             animate={titleInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display font-light text-6xl md:text-7xl text-cream"
+            className="font-display font-light text-6xl md:text-7xl text-[#111111]"
           >
             {t.team.title}
           </motion.h2>

@@ -16,7 +16,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-noir-soft border-t border-cream/10 pt-16 pb-10 px-8 lg:px-12">
+    <footer className="bg-[#f0ece0] border-t border-cream/10 pt-16 pb-10 px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
         {/* Top grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
@@ -24,13 +24,13 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-8 h-8 relative flex-shrink-0">
-                <Image src="/logoWhite.svg" alt="À table Panama" fill className="object-contain" />
+                <Image src="/logoBlack.svg" alt="À table Panama" fill className="object-contain" />
               </div>
-              <span className="font-display text-base tracking-[0.25em] text-cream/90 uppercase">
+              <span className="font-display text-base tracking-[0.25em] text-[#111111]/90 uppercase">
                 À table
               </span>
             </div>
-            <p className="text-[10px] tracking-[0.2em] uppercase text-cream/60 mb-6">
+            <p className="text-[10px] tracking-[0.2em] uppercase text-[#111111]/60 mb-6">
               {t.footer.tagline}
             </p>
           </div>
@@ -45,7 +45,7 @@ export default function Footer() {
                 <li key={s.href}>
                   <Link
                     href={s.href}
-                    className="text-sm text-cream/70 hover:text-gold transition-colors duration-300 font-light"
+                    className="text-sm text-[#111111]/70 hover:text-gold transition-colors duration-300 font-light"
                     style={{ textDecoration: 'none' }}
                   >
                     {s.label}
@@ -69,7 +69,7 @@ export default function Footer() {
                   <a
                     href={l.href}
                     onClick={e => { e.preventDefault(); document.querySelector(l.href)?.scrollIntoView({ behavior: 'smooth' }); }}
-                    className="text-sm text-cream/70 hover:text-gold transition-colors duration-300 font-light cursor-pointer"
+                    className="text-sm text-[#111111]/70 hover:text-gold transition-colors duration-300 font-light cursor-pointer"
                     style={{ textDecoration: 'none' }}
                   >
                     {l.label}
@@ -85,13 +85,13 @@ export default function Footer() {
               Contact
             </p>
             <div className="flex flex-col gap-2.5">
-              <a href="tel:+50765202230" className="text-sm text-cream/75 hover:text-gold transition-colors font-light" style={{ textDecoration: 'none' }}>
+              <a href="tel:+50765202230" className="text-sm text-[#111111]/75 hover:text-gold transition-colors font-light" style={{ textDecoration: 'none' }}>
                 +507 6520-2230
               </a>
-              <a href="mailto:atablepanama@gmail.com" className="text-sm text-cream/75 hover:text-gold transition-colors font-light" style={{ textDecoration: 'none' }}>
+              <a href="mailto:atablepanama@gmail.com" className="text-sm text-[#111111]/75 hover:text-gold transition-colors font-light" style={{ textDecoration: 'none' }}>
                 atablepanama@gmail.com
               </a>
-              <p className="text-sm text-cream/55 font-light leading-relaxed">
+              <p className="text-sm text-[#111111]/55 font-light leading-relaxed">
                 Local 1, Edificio Antigua Domingo<br />Plaza Santa Ana, Panama City
               </p>
             </div>
@@ -100,7 +100,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="pt-6 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-[10px] tracking-[0.2em] uppercase text-cream/45">
+          <p className="text-[10px] tracking-[0.2em] uppercase text-[#111111]/45">
             © {year} À table Panama — {t.footer.rights}
           </p>
           <div className="w-8 h-px bg-gold/40" />

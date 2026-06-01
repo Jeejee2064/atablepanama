@@ -27,13 +27,13 @@ export default function SupperClub() {
   const imgY = useTransform(scrollYProgress, [0, 1], ['-6%', '6%']);
 
   return (
-    <section ref={ref} className="relative overflow-hidden" style={{ background: '#0e0e0e', minHeight: '80vh' }}>
+    <section ref={ref} className="relative overflow-hidden" style={{ background: '#0a1628', minHeight: '80vh' }}>
       {/* Background image parallax */}
       <motion.div style={{ y: imgY }} className="absolute inset-0 scale-110">
         <Image src="/table.png" alt="SupperClub" fill className="object-cover opacity-30" sizes="100vw" />
       </motion.div>
       {/* Overlay */}
-      <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(14,14,14,0.97) 0%, rgba(14,14,14,0.75) 55%, rgba(14,14,14,0.4) 100%)' }} />
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(10,22,40,0.97) 0%, rgba(10,22,40,0.75) 55%, rgba(10,22,40,0.4) 100%)' }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-16 py-24 lg:py-36 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left: content */}
@@ -70,7 +70,7 @@ export default function SupperClub() {
             <Link
               href={SLUG[lang] || SLUG.es}
               className="inline-flex items-center gap-3 text-[11px] tracking-[0.25em] uppercase font-medium px-7 py-4 transition-all duration-300"
-              style={{ color: '#0e0e0e', background: '#e2b84a', textDecoration: 'none' }}
+              style={{ color: '#0a1628', background: '#e2b84a', textDecoration: 'none' }}
             >
               {CTA[lang] || CTA.es}
               <span className="text-base leading-none">→</span>

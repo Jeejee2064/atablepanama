@@ -52,7 +52,7 @@ function ServiceCard({ service, data, index, lang }) {
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
         </motion.div>
-        <div className={`absolute inset-0 ${isEven ? 'bg-gradient-to-r from-transparent to-[#161616]/40' : 'bg-gradient-to-l from-transparent to-[#161616]/40'}`} />
+        <div className={`absolute inset-0 ${isEven ? 'bg-gradient-to-r from-transparent to-[#f5f1e8]/40' : 'bg-gradient-to-l from-transparent to-[#f5f1e8]/40'}`} />
 
         {/* Roman numeral */}
         <div className={`absolute top-6 ${isEven ? 'right-6' : 'left-6'} font-display text-8xl text-white/8 font-light select-none leading-none`}>
@@ -61,14 +61,17 @@ function ServiceCard({ service, data, index, lang }) {
 
         {/* Tag */}
         <div className={`absolute bottom-5 ${isEven ? 'left-5' : 'left-5 lg:right-5 lg:left-auto'}`}>
-          <span className="text-[8px] tracking-[0.3em] uppercase text-gold border border-gold/30 px-3 py-1.5 bg-noir/30 backdrop-blur-sm">
+          <span className="text-[8px] tracking-[0.3em] uppercase text-gold border border-gold/30 px-3 py-1.5 bg-[#faf8f3]/30 backdrop-blur-sm">
             {service.tag}
           </span>
         </div>
       </div>
 
       {/* Text */}
-      <div className={`flex flex-col justify-center px-8 lg:px-14 xl:px-18 py-14 bg-[#161616] ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
+      <div
+        className={`flex flex-col justify-center px-8 lg:px-14 xl:px-18 py-14 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}
+        style={{ background: isEven ? 'linear-gradient(to left, #faf8f3, #f0edf8)' : 'linear-gradient(to right, #faf8f3, #f0edf8)' }}
+      >
         <motion.div
           initial={{ scaleX: 0 }}
           animate={inView ? { scaleX: 1 } : {}}
@@ -76,11 +79,11 @@ function ServiceCard({ service, data, index, lang }) {
           className="w-10 h-px bg-gold mb-7 origin-left"
         />
 
-        <h3 className="font-display text-4xl lg:text-5xl xl:text-6xl text-cream font-light leading-tight mb-5">
+        <h3 className="font-display text-4xl lg:text-5xl xl:text-6xl text-[#111111] font-light leading-tight mb-5">
           {service.title}
         </h3>
 
-        <p className="text-cream/80 text-base leading-relaxed mb-8 max-w-sm font-light tracking-wide">
+        <p className="text-[#111111]/80 text-base leading-relaxed mb-8 max-w-sm font-light tracking-wide">
           {service.description}
         </p>
 
@@ -92,7 +95,7 @@ function ServiceCard({ service, data, index, lang }) {
               initial={{ opacity: 0, x: -8 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.4 + index * 0.08 + i * 0.05 }}
-              className="flex items-center gap-3 text-sm text-cream/75 tracking-wide font-light"
+              className="flex items-center gap-3 text-sm text-[#111111]/75 tracking-wide font-light"
             >
               <span className="w-4 h-px bg-gold/40 flex-shrink-0" />
               {item}
@@ -119,7 +122,7 @@ export default function Services() {
   const titleInView = useInView(titleRef, { once: true, margin: '-12%' });
 
   return (
-    <section id="services" className="bg-[#161616]">
+    <section id="services" style={{ background: "linear-gradient(160deg, #faf8f3 0%, #eef1f8 100%)" }}>
       {/* Header */}
       <div ref={titleRef} className="max-w-7xl mx-auto px-8 lg:px-12 pt-24 pb-16">
         <motion.p
@@ -134,18 +137,18 @@ export default function Services() {
           initial={{ opacity: 0, y: 35 }}
           animate={titleInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-          className="font-display text-6xl md:text-7xl font-light text-cream"
+          className="font-display text-6xl md:text-7xl font-light text-[#111111]"
         >
           {t.services.title}
         </motion.h2>
       </div>
 
       {/* Blocks */}
-      <div className="border-t border-white/5">
+      <div className="border-t border-black/6">
         {SERVICE_DATA.map((data, i) => {
           const service = { ...t.services[data.key], learnMore: t.services.learnMore };
           return (
-            <div key={data.key} className="border-b border-white/5">
+            <div key={data.key} className="border-b border-black/6">
               <ServiceCard service={service} data={data} index={i} lang={lang} />
             </div>
           );

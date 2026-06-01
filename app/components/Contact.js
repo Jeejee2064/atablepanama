@@ -69,7 +69,7 @@ export default function Contact() {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}`;
 
   return (
-    <section id="contact" className="section-pad bg-noir relative overflow-hidden">
+    <section id="contact" className="section-pad relative overflow-hidden" style={{ background: "linear-gradient(160deg, #faf8f3 0%, #eceff8 100%)" }}>
       {/* Subtle bg image */}
       <div className="absolute inset-0 opacity-[0.04]">
         <Image
@@ -98,7 +98,7 @@ export default function Contact() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={titleInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-                className="font-display text-6xl md:text-7xl text-cream mb-12"
+                className="font-display text-6xl md:text-7xl text-[#111111] mb-12"
               >
                 {t.contact.title}
               </motion.h2>
@@ -115,7 +115,7 @@ export default function Contact() {
                 <div className="text-gold mt-0.5 flex-shrink-0">
                   <MapPinIcon />
                 </div>
-                <p className="text-cream/85 text-base leading-relaxed font-light tracking-wide">
+                <p className="text-[#111111]/85 text-base leading-relaxed font-light tracking-wide">
                   {t.contact.address}
                 </p>
               </div>
@@ -127,7 +127,7 @@ export default function Contact() {
                 </div>
                 <a
                   href="tel:+50765202230"
-                  className="text-cream/85 text-base hover:text-gold transition-colors duration-300 tracking-wide"
+                  className="text-[#111111]/85 text-base hover:text-gold transition-colors duration-300 tracking-wide"
                 >
                   +507 6520-2230
                 </a>
@@ -140,14 +140,14 @@ export default function Contact() {
                 </div>
                 <a
                   href="mailto:atablepanama@gmail.com"
-                  className="text-cream/85 text-base hover:text-gold transition-colors duration-300 tracking-wide"
+                  className="text-[#111111]/85 text-base hover:text-gold transition-colors duration-300 tracking-wide"
                 >
                   atablepanama@gmail.com
                 </a>
               </div>
 
               {/* Divider */}
-              <div className="w-full h-px bg-cream/10 my-6" />
+              <div className="w-full h-px bg-black/10 my-6" />
 
               {/* WhatsApp button */}
               <motion.a
@@ -185,7 +185,7 @@ export default function Contact() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                     </svg>
                   </div>
-                  <p className="font-display text-2xl text-cream">{t.contact.successMsg}</p>
+                  <p className="font-display text-2xl text-[#111111]">{t.contact.successMsg}</p>
                   <button
                     onClick={() => setSent(false)}
                     className="text-[10px] tracking-[0.25em] uppercase text-gold/60 hover:text-gold mt-4 transition-colors"
@@ -204,7 +204,7 @@ export default function Contact() {
                 >
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                     <div>
-                      <label className="text-[9px] tracking-[0.25em] uppercase text-cream/65 block mb-2">
+                      <label className="text-[9px] tracking-[0.25em] uppercase text-[#111111]/65 block mb-2">
                         {t.contact.name}
                       </label>
                       <input
@@ -218,7 +218,7 @@ export default function Contact() {
                       />
                     </div>
                     <div>
-                      <label className="text-[9px] tracking-[0.25em] uppercase text-cream/65 block mb-2">
+                      <label className="text-[9px] tracking-[0.25em] uppercase text-[#111111]/65 block mb-2">
                         {t.contact.email}
                       </label>
                       <input
@@ -234,7 +234,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label className="text-[9px] tracking-[0.25em] uppercase text-cream/65 block mb-2">
+                    <label className="text-[9px] tracking-[0.25em] uppercase text-[#111111]/65 block mb-2">
                       {t.contact.phone}
                     </label>
                     <input
@@ -248,7 +248,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label className="text-[9px] tracking-[0.25em] uppercase text-cream/65 block mb-2">
+                    <label className="text-[9px] tracking-[0.25em] uppercase text-[#111111]/65 block mb-2">
                       {t.contact.message}
                     </label>
                     <textarea
@@ -267,10 +267,10 @@ export default function Contact() {
                     whileHover={{ scale: 1.01 }}
                     whileTap={{ scale: 0.99 }}
                     disabled={loading}
-                    className="group flex items-center gap-4 text-[11px] tracking-[0.3em] uppercase text-cream bg-gold/0 border border-cream/20 hover:border-gold hover:text-gold px-8 py-4 transition-all duration-300 disabled:opacity-50"
+                    className="group flex items-center gap-4 text-[11px] tracking-[0.3em] uppercase text-[#111111] bg-gold/0 border border-cream/20 hover:border-gold hover:text-gold px-8 py-4 transition-all duration-300 disabled:opacity-50"
                   >
                     {loading ? '...' : t.contact.send}
-                    <span className="w-6 h-px bg-cream/40 group-hover:bg-gold group-hover:w-10 transition-all duration-500" />
+                    <span className="w-6 h-px bg-black/30 group-hover:bg-gold group-hover:w-10 transition-all duration-500" />
                   </motion.button>
                 </motion.form>
               )}

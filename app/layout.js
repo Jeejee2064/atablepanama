@@ -25,11 +25,11 @@ const jost = Jost({
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "À table Panama | Chef Privé, Catering & Asesoría Gastronómica — Panama City",
+    default: "À table Panama — Gastronomía de Alto Nivel en Panama City",
     template: "%s | À table Panama",
   },
   description:
-    "Chef privé, traiteur haut de gamme et conseil en restauration à Panama City. Gastronomía de alto nivel para eventos privados, restaurantes y experiencias exclusivas.",
+    "Catering de lujo, chef a domicilio, asesoría para restaurantes y SupperClub exclusivo en Panama City. Alta gastronomía al servicio de su visión.",
   keywords: [
     "catering panama city",
     "chef a domicilio panama city",
@@ -64,9 +64,9 @@ export const metadata = {
   openGraph: {
     type: "website",
     siteName: "À table Panama",
-    title: "À table Panama | Chef Privé, Catering & Asesoría Gastronómica — Panama City",
+    title: "À table Panama — Gastronomía de Alto Nivel en Panama City",
     description:
-      "Chef privé, traiteur haut de gamme et conseil en restauration à Panama City. Gastronomía de alto nivel para eventos privados, restaurantes y experiencias exclusivas.",
+      "Catering de lujo, chef a domicilio, asesoría para restaurantes y SupperClub exclusivo en Panama City. Alta gastronomía al servicio de su visión.",
     url: SITE_URL,
     locale: "es_PA",
     alternateLocale: ["en_US", "fr_FR"],
@@ -75,7 +75,7 @@ export const metadata = {
         url: "/og-home.jpg",
         width: 1200,
         height: 630,
-        alt: "À table Panama — Haute Gastronomie Panama City",
+        alt: "À table Panama — Gastronomía de Alto Nivel en Panama City",
       },
     ],
   },

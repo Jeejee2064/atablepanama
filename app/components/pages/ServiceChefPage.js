@@ -43,7 +43,7 @@ const OCCASIONS = {
 };
 
 function Tag({ children }) {
-  return <p className="text-[0.6rem] tracking-[0.35em] uppercase font-medium mb-6" style={{ color: '#e2b84a' }}>{children}</p>;
+  return <p className="text-[0.6rem] tracking-[0.35em] uppercase font-medium mb-6" style={{ color: '#0a1628' }}>{children}</p>;
 }
 
 export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherServices }) {
@@ -52,18 +52,18 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
   const occasions = OCCASIONS[lang] || OCCASIONS.es;
 
   return (
-    <div className="min-h-screen bg-[#141414] text-[#faf8f3]" style={{ fontFamily: 'var(--font-jost), sans-serif' }}>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#141414]/90 backdrop-blur-md border-b border-white/5 py-4 px-5 lg:px-12">
+    <div className="min-h-screen bg-[#faf8f3] text-[#111111]" style={{ fontFamily: 'var(--font-jost), sans-serif' }}>
+      <header className="fixed top-0 left-0 right-0 z-50 bg-[#faf8f3]/95 backdrop-blur-md border-b border-black/6 py-4 px-5 lg:px-12">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <div className="w-8 h-8 relative flex-shrink-0">
-              <Image src="/logoWhite.svg" alt="À table Panama" fill className="object-contain" />
+              <Image src="/logoBlack.svg" alt="À table Panama" fill className="object-contain" />
             </div>
-            <span className="font-display text-base tracking-[0.25em] uppercase" style={{ color: 'rgba(250,248,243,0.92)' }}>À table</span>
+            <span className="font-display text-base tracking-[0.25em] uppercase" style={{ color: 'rgba(17,17,17,0.88)' }}>À table</span>
           </Link>
           <div className="flex items-center gap-4 lg:gap-6">
             <LangSwitcher currentLang={lang} slugMap={langSlugMap} />
-            <Link href="/#contact" className="hidden sm:block text-[0.65rem] tracking-[0.22em] uppercase font-medium px-5 py-2.5" style={{ color: '#0e0e0e', background: '#e2b84a', textDecoration: 'none' }}>{sp.contactCta}</Link>
+            <Link href="/#contact" className="hidden sm:block text-[0.65rem] tracking-[0.22em] uppercase font-medium px-5 py-2.5" style={{ color: '#111111', background: '#c9a84c', textDecoration: 'none' }}>{sp.contactCta}</Link>
           </div>
         </div>
       </header>
@@ -72,17 +72,17 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
       <section className="grid grid-cols-1 lg:grid-cols-5 min-h-screen">
         <div className="relative h-72 sm:h-96 lg:h-auto lg:col-span-3 overflow-hidden order-1">
           <Image src="/personalchef.png" alt={service.title} fill className="object-cover object-top" priority sizes="(max-width:1024px) 100vw, 60vw" />
-          <div className="absolute inset-0 hidden lg:block" style={{ background: 'linear-gradient(to right, transparent 55%, #141414 100%)' }} />
-          <div className="absolute inset-0 lg:hidden" style={{ background: 'linear-gradient(to top, #141414 0%, transparent 55%)' }} />
+          <div className="absolute inset-0 hidden lg:block" style={{ background: 'linear-gradient(to right, transparent 55%, #faf8f3 100%)' }} />
+          <div className="absolute inset-0 lg:hidden" style={{ background: 'linear-gradient(to top, #faf8f3 0%, transparent 55%)' }} />
         </div>
-        <div className="flex flex-col justify-center px-6 lg:px-10 pt-8 pb-14 lg:pt-36 lg:col-span-2 bg-[#141414] order-2">
+        <div className="flex flex-col justify-center px-6 lg:px-10 pt-8 pb-14 lg:pt-36 lg:col-span-2 bg-[#faf8f3] order-2">
           <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.3 }}>
             <Tag>{service.tag} · Panama City</Tag>
-            <h1 className="font-display font-light text-[#faf8f3] mb-5" style={{ fontSize: 'clamp(2.4rem, 4vw, 4.5rem)', lineHeight: 1.05 }}>
+            <h1 className="font-display font-light text-[#111111] mb-5" style={{ fontSize: 'clamp(2.4rem, 4vw, 4.5rem)', lineHeight: 1.05 }}>
               {service.title}
             </h1>
-            <div className="w-10 h-px mb-5" style={{ background: '#e2b84a' }} />
-            <p className="font-display font-light italic" style={{ fontSize: 'clamp(1.2rem, 2vw, 1.5rem)', color: 'rgba(250,248,243,0.92)', lineHeight: 1.45 }}>
+            <div className="w-10 h-px mb-5" style={{ background: '#c9a84c' }} />
+            <p className="font-display font-light italic" style={{ fontSize: 'clamp(1.2rem, 2vw, 1.5rem)', color: 'rgba(17,17,17,0.88)', lineHeight: 1.45 }}>
               {tagline}
             </p>
             <PageAnchors sections={[
@@ -96,21 +96,31 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
 
       {/* Description */}
       <section className="px-6 lg:px-20 py-14 lg:py-20 max-w-3xl mx-auto text-center">
-        <p className="font-light" style={{ fontSize: '1.1rem', color: 'rgba(250,248,243,0.92)', lineHeight: 1.8 }}>
+        <p className="font-light" style={{ fontSize: '1.1rem', color: 'rgba(17,17,17,0.88)', lineHeight: 1.8 }}>
           {service.description}
         </p>
       </section>
 
+
+      {/* Galerie assiettes */}
+      <section className="grid grid-cols-3 gap-px h-48 sm:h-64">
+        {['/assiette2.png', '/produits.png', '/chinchin.png'].map((src, i) => (
+          <div key={i} className="relative overflow-hidden">
+            <ClickableImage src={src} alt="" fill className="object-cover" sizes="33vw" />
+          </div>
+        ))}
+      </section>
+
       {/* 4 étapes */}
-      <section id="sc-approach" className="bg-[#1a1a1a] px-6 lg:px-16 py-16 lg:py-24">
+      <section id="sc-approach" className="bg-[#ede9df] px-6 lg:px-16 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto">
           <Tag>{service.h2_approach}</Tag>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-white/5 border border-white/5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-black/6 border border-black/6">
             {steps.map((step, i) => (
               <div key={i} className="p-7 lg:p-8">
                 <p className="font-display font-light mb-4" style={{ fontSize: '2.8rem', color: 'rgba(226,184,74,0.15)', lineHeight: 1 }}>{step.n}</p>
-                <p className="font-medium mb-3" style={{ fontSize: '1.1rem', color: '#faf8f3' }}>{step.title}</p>
-                <p className="font-light" style={{ fontSize: '0.95rem', color: 'rgba(250,248,243,0.92)', lineHeight: 1.65 }}>{step.desc}</p>
+                <p className="font-medium mb-3" style={{ fontSize: '1.1rem', color: '#111111' }}>{step.title}</p>
+                <p className="font-light" style={{ fontSize: '0.95rem', color: 'rgba(17,17,17,0.88)', lineHeight: 1.65 }}>{step.desc}</p>
               </div>
             ))}
           </div>
@@ -119,17 +129,17 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
 
       {/* Occasions + mosaïque assiettes */}
       <section id="sc-whom" className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="px-6 lg:px-14 py-14 lg:py-20 bg-[#141414] flex flex-col justify-center order-1">
+        <div className="px-6 lg:px-14 py-14 lg:py-20 bg-[#faf8f3] flex flex-col justify-center order-1">
           <Tag>{service.h2_whom}</Tag>
           <ul className="flex flex-col gap-4 mb-10">
             {occasions.map((item, i) => (
-              <li key={i} className="flex items-center gap-4 font-light" style={{ fontSize: '1.05rem', color: 'rgba(250,248,243,0.92)' }}>
-                <span className="w-5 h-px flex-shrink-0" style={{ background: '#e2b84a' }} />{item}
+              <li key={i} className="flex items-center gap-4 font-light" style={{ fontSize: '1.05rem', color: 'rgba(17,17,17,0.88)' }}>
+                <span className="w-5 h-px flex-shrink-0" style={{ background: '#c9a84c' }} />{item}
               </li>
             ))}
           </ul>
-          <Link href="/#contact" className="inline-flex items-center gap-3 text-[0.72rem] tracking-[0.22em] uppercase font-medium px-7 py-3.5" style={{ color: '#0e0e0e', background: '#e2b84a', textDecoration: 'none' }}>
-            {sp.contactCta} <span className="block w-7 h-px" style={{ background: '#e2b84a' }} />
+          <Link href="/#contact" className="inline-flex items-center gap-3 text-[0.72rem] tracking-[0.22em] uppercase font-medium px-7 py-3.5" style={{ color: '#111111', background: '#c9a84c', textDecoration: 'none' }}>
+            {sp.contactCta} <span className="block w-7 h-px" style={{ background: '#c9a84c' }} />
           </Link>
         </div>
         <div className="grid grid-cols-2 grid-rows-2 h-64 sm:h-80 lg:h-auto order-2">
@@ -142,17 +152,23 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
       </section>
 
       {/* Ce qui est inclus */}
-      <section id="sc-offer" className="bg-[#1a1a1a] px-6 lg:px-16 py-16 lg:py-24">
+      <section id="sc-offer" className="bg-[#ede9df] px-6 lg:px-16 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto">
           <Tag>{service.h2_offer}</Tag>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {service.items.map((item, i) => (
-              <div key={i} className="p-5 border font-light" style={{ borderColor: 'rgba(226,184,74,0.15)', fontSize: '1rem', color: 'rgba(250,248,243,0.92)', lineHeight: 1.5 }}>
+              <div key={i} className="p-5 border font-light" style={{ borderColor: 'rgba(226,184,74,0.15)', fontSize: '1rem', color: 'rgba(17,17,17,0.88)', lineHeight: 1.5 }}>
                 {item}
               </div>
             ))}
           </div>
         </div>
+      </section>
+
+
+      {/* Photo pleine largeur */}
+      <section className="relative h-56 sm:h-72 lg:h-96 overflow-hidden">
+        <ClickableImage src="/table2.png" alt="" fill className="object-cover" sizes="100vw" />
       </section>
 
       <OtherServices otherServices={otherServices} lang={lang} sp={sp} />
@@ -164,15 +180,15 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
 
 function OtherServices({ otherServices, lang, sp }) {
   return (
-    <section className="px-6 lg:px-16 py-14 lg:py-20 bg-[#141414]">
+    <section className="px-6 lg:px-16 py-14 lg:py-20 bg-[#faf8f3]">
       <div className="max-w-7xl mx-auto">
-        <p className="text-[0.6rem] tracking-[0.3em] uppercase mb-8" style={{ color: 'rgba(250,248,243,0.35)' }}>{sp.otherServices}</p>
+        <p className="text-[0.6rem] tracking-[0.3em] uppercase mb-8" style={{ color: 'rgba(17,17,17,0.25)' }}>{sp.otherServices}</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/5">
           {otherServices.map(svc => (
-            <Link key={svc.key} href={`/${lang}/${svc.slug}`} className="flex flex-col gap-3 p-6 lg:p-8 bg-[#141414] no-underline">
-              <p className="text-[0.6rem] tracking-[0.3em] uppercase" style={{ color: '#e2b84a' }}>{svc.tag}</p>
-              <p className="font-display font-light" style={{ fontSize: '1.6rem', color: '#faf8f3', lineHeight: 1.2 }}>{svc.title}</p>
-              <span className="text-sm mt-1" style={{ color: 'rgba(250,248,243,0.35)' }}>→</span>
+            <Link key={svc.key} href={`/${lang}/${svc.slug}`} className="flex flex-col gap-3 p-6 lg:p-8 bg-[#faf8f3] no-underline">
+              <p className="text-[0.6rem] tracking-[0.3em] uppercase" style={{ color: '#0a1628' }}>{svc.tag}</p>
+              <p className="font-display font-light" style={{ fontSize: '1.6rem', color: '#111111', lineHeight: 1.2 }}>{svc.title}</p>
+              <span className="text-sm mt-1" style={{ color: 'rgba(17,17,17,0.25)' }}>→</span>
             </Link>
           ))}
         </div>
