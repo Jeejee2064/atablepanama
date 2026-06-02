@@ -81,9 +81,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "À table Panama | Chef Privé, Catering & Asesoría — Panama City",
+    title: "À table Panama — Alta Gastronomía en Panama City",
     description:
-      "Chef privé, catering & conseil gastronomique à Panama City.",
+      "Catering de lujo, chef a domicilio, asesoría para restaurantes y SupperClub exclusivo en Panama City.",
     images: ["/og-home.jpg"],
   },
 };

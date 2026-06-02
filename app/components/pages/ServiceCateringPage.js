@@ -8,25 +8,26 @@ import WhatsAppButton from '../WhatsAppButton';
 import PageFooter from '../PageFooter';
 import ClickableImage from '../ClickableImage';
 import PageAnchors from '../PageAnchors';
+import ParallaxBanner from '../ParallaxBanner';
 
 const EVENT_TYPES = {
   es: [
-    { label: 'Bodas & Celebraciones', img: '/table2.png' },
-    { label: 'Eventos Corporativos', img: '/decorationtable.png' },
-    { label: 'Congresos & Incentivos', img: '/table3.png' },
-    { label: 'Cócteles & Recepciones', img: '/chinchin.png' },
+    { label: 'Bodas & Celebraciones', img: '/table2.JPG' },
+    { label: 'Eventos Corporativos', img: '/deco1.jpeg' },
+    { label: 'Congresos & Incentivos', img: '/dressage1.JPG' },
+    { label: 'Cócteles & Recepciones', img: '/assiette7.jpeg' },
   ],
   en: [
-    { label: 'Weddings & Celebrations', img: '/table2.png' },
-    { label: 'Corporate Events', img: '/decorationtable.png' },
-    { label: 'Congresses & Incentives', img: '/table3.png' },
-    { label: 'Cocktails & Receptions', img: '/chinchin.png' },
+    { label: 'Weddings & Celebrations', img: '/table2.JPG' },
+    { label: 'Corporate Events', img: '/deco1.jpeg' },
+    { label: 'Congresses & Incentives', img: '/dressage1.JPG' },
+    { label: 'Cocktails & Receptions', img: '/assiette7.jpeg' },
   ],
   fr: [
-    { label: 'Mariages & Célébrations', img: '/table2.png' },
-    { label: "Événements d'Entreprise", img: '/decorationtable.png' },
-    { label: 'Congrès & Incentives', img: '/table3.png' },
-    { label: 'Cocktails & Réceptions', img: '/chinchin.png' },
+    { label: 'Mariages & Célébrations', img: '/table2.JPG' },
+    { label: "Événements d'Entreprise", img: '/deco1.jpeg' },
+    { label: 'Congrès & Incentives', img: '/dressage1.JPG' },
+    { label: 'Cocktails & Réceptions', img: '/assiette7.jpeg' },
   ],
 };
 
@@ -81,7 +82,7 @@ export default function ServiceCateringPage({ lang, service, sp, langSlugMap, ot
       </header>
 
       <section className="relative h-screen min-h-[580px] overflow-hidden">
-        <Image src="/decorationtable.png" alt={service.title} fill className="object-cover" priority sizes="100vw" />
+        <Image src="/dressage2.JPG" alt={service.title} fill className="object-cover" priority sizes="100vw" />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(250,248,243,0.18) 0%, rgba(250,248,243,0.12) 40%, rgba(250,248,243,0.88) 100%)' }} />
         <div className="absolute bottom-0 left-0 right-0 px-6 lg:px-16 pb-12 lg:pb-20">
           <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.2 }}>
@@ -139,7 +140,7 @@ export default function ServiceCateringPage({ lang, service, sp, langSlugMap, ot
 
       {/* Galerie ambiance */}
       <section className="grid grid-cols-2 gap-px h-56 sm:h-72">
-        {['/table3.png', '/assiette3.png'].map((src, i) => (
+        {['/table1.jpeg', '/assiette6.jpeg'].map((src, i) => (
           <div key={i} className="relative overflow-hidden">
             <ClickableImage src={src} alt="" fill className="object-cover" sizes="50vw" />
           </div>
@@ -160,11 +161,7 @@ export default function ServiceCateringPage({ lang, service, sp, langSlugMap, ot
       </section>
 
 
-      {/* Photo atmosphère */}
-      <section className="relative h-56 sm:h-72 lg:h-96 overflow-hidden">
-        <ClickableImage src="/assiette4.png" alt="" fill className="object-cover" sizes="100vw" />
-        <div className="absolute inset-0 pointer-events-none" style={{ background: 'linear-gradient(to bottom, transparent 50%, rgba(237,233,223,0.7) 100%)' }} />
-      </section>
+      <ParallaxBanner src="/plate5.JPG" height="h-56 sm:h-72 lg:h-96" />
 
       <section className="bg-[#ede9df] px-6 py-16 text-center">
         <Link href="/#contact" className="inline-flex items-center gap-4 text-[0.7rem] tracking-[0.3em] uppercase" style={{ color: '#111111', background: '#c9a84c', padding: '16px 40px', textDecoration: 'none' }}>

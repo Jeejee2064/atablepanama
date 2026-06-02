@@ -73,7 +73,7 @@ export default function Contact() {
       {/* Subtle bg image */}
       <div className="absolute inset-0 opacity-[0.04]">
         <Image
-          src="/produits4.png"
+          src="/products4.JPG"
           alt=""
           fill
           className="object-cover blur-3xl"

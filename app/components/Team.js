@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useLanguage } from './LanguageContext';
 
 const MEMBERS = [
-  { key: 'chris', image: '/christopher.png' },
+  { key: 'chris', image: '/chris.jpeg' },
   { key: 'clemence', image: '/clemence.png' },
 ];
 

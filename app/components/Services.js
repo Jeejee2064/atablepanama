@@ -9,17 +9,17 @@ import { useLanguage } from './LanguageContext';
 const SERVICE_DATA = [
   {
     key: 'catering',
-    images: ['/decorationtable.png', '/table3.png'],
+    images: ['/deco2.jpeg', '/table2.jpeg'],
     accent: 'I',
   },
   {
     key: 'chef',
-    images: ['/personalchef.png', '/assiette2.png'],
+    images: ['/decoupage1.JPG', '/dressage1.JPG'],
     accent: 'II',
   },
   {
     key: 'asesoria',
-    images: ['/produits.png', '/produits2.png'],
+    images: ['/products2.JPG', '/market1.JPG'],
     accent: 'III',
   },
 ];

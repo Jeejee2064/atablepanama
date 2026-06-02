@@ -35,7 +35,7 @@ export default function ServiceSupperclubPage({ lang, service, sp, langSlugMap, 
 
       {/* Hero — plein écran, atmosphere de dîner secret */}
       <section className="relative h-screen min-h-[600px] overflow-hidden">
-        <Image src="/table.png" alt="SupperClub by À TABLE" fill className="object-cover" priority sizes="100vw" />
+        <Image src="/table1.JPG" alt="SupperClub by À TABLE" fill className="object-cover" priority sizes="100vw" />
         {/* Overlay profond, ambiance nuit */}
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(10,22,40,0.35) 0%, rgba(10,22,40,0.15) 35%, rgba(10,22,40,0.82) 100%)' }} />
 
@@ -96,7 +96,7 @@ export default function ServiceSupperclubPage({ lang, service, sp, langSlugMap, 
 
       {/* Photos ambiance */}
       <section className="grid grid-cols-1 sm:grid-cols-3 gap-px" style={{ background: '#faf8f3', height: 'clamp(280px, 35vw, 420px)' }}>
-        {['/chinchin.png', '/assiette1.png', '/table2.png'].map((src, i) => (
+        {['/dressage5.JPG', '/assiette6.jpeg', '/table2.jpeg'].map((src, i) => (
           <div key={i} className="relative overflow-hidden">
             <ClickableImage src={src} alt="" fill className="object-cover" sizes="(max-width:640px) 100vw, 33vw" />
           </div>
@@ -112,7 +112,7 @@ export default function ServiceSupperclubPage({ lang, service, sp, langSlugMap, 
           </p>
         </div>
         <div className="relative h-64 lg:h-96 overflow-hidden">
-          <ClickableImage src="/decorationtable.png" alt="" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
+          <ClickableImage src="/deco3.jpeg" alt="" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(10,22,40,0.3) 0%, transparent 60%)' }} />
         </div>
       </section>
@@ -120,7 +120,7 @@ export default function ServiceSupperclubPage({ lang, service, sp, langSlugMap, 
 
       {/* Galerie ambiance SupperClub */}
       <section className="grid grid-cols-2 lg:grid-cols-4 gap-px h-48 sm:h-64">
-        {['/table.png', '/assiette1.png', '/chinchin.png', '/decorationtable.png'].map((src, i) => (
+        {['/table2.JPG', '/plate2.JPG', '/assiette7.jpeg', '/deco2.jpeg'].map((src, i) => (
           <div key={i} className="relative overflow-hidden">
             <ClickableImage src={src} alt="" fill className="object-cover" sizes="(max-width:1024px) 50vw, 25vw" />
           </div>
@@ -157,7 +157,7 @@ export default function ServiceSupperclubPage({ lang, service, sp, langSlugMap, 
           </Link>
         </div>
         <div className="relative h-64 lg:h-80 overflow-hidden">
-          <ClickableImage src="/produits4.png" alt="" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
+          <ClickableImage src="/products7.JPG" alt="" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
         </div>
       </section>
 

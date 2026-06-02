@@ -8,6 +8,7 @@ import WhatsAppButton from '../WhatsAppButton';
 import PageFooter from '../PageFooter';
 import ClickableImage from '../ClickableImage';
 import PageAnchors from '../PageAnchors';
+import ParallaxBanner from '../ParallaxBanner';
 
 const STEPS = {
   es: [
@@ -71,7 +72,7 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
       {/* Hero — image chef plein fond sur mobile, split sur desktop */}
       <section className="grid grid-cols-1 lg:grid-cols-5 min-h-screen">
         <div className="relative h-72 sm:h-96 lg:h-auto lg:col-span-3 overflow-hidden order-1">
-          <Image src="/personalchef.png" alt={service.title} fill className="object-cover object-top" priority sizes="(max-width:1024px) 100vw, 60vw" />
+          <Image src="/cuisine1.JPG" alt={service.title} fill className="object-cover object-top" priority sizes="(max-width:1024px) 100vw, 60vw" />
           <div className="absolute inset-0 hidden lg:block" style={{ background: 'linear-gradient(to right, transparent 55%, #faf8f3 100%)' }} />
           <div className="absolute inset-0 lg:hidden" style={{ background: 'linear-gradient(to top, #faf8f3 0%, transparent 55%)' }} />
         </div>
@@ -101,10 +102,9 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
         </p>
       </section>
 
-
       {/* Galerie assiettes */}
       <section className="grid grid-cols-3 gap-px h-48 sm:h-64">
-        {['/assiette2.png', '/produits.png', '/chinchin.png'].map((src, i) => (
+        {['/plate3.JPG', '/products3.JPG', '/assiette6.jpeg'].map((src, i) => (
           <div key={i} className="relative overflow-hidden">
             <ClickableImage src={src} alt="" fill className="object-cover" sizes="33vw" />
           </div>
@@ -143,7 +143,7 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
           </Link>
         </div>
         <div className="grid grid-cols-2 grid-rows-2 h-64 sm:h-80 lg:h-auto order-2">
-          {['/assiette1.png', '/assiette2.png', '/assiette3.png', '/assiette4.png'].map((src, i) => (
+          {['/plate1.JPG', '/plate2.JPG', '/plate4.JPG', '/plate5.JPG'].map((src, i) => (
             <div key={i} className="relative overflow-hidden">
               <ClickableImage src={src} alt="" fill className="object-cover" sizes="(max-width:1024px) 50vw, 25vw" />
             </div>
@@ -165,11 +165,7 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
         </div>
       </section>
 
-
-      {/* Photo pleine largeur */}
-      <section className="relative h-56 sm:h-72 lg:h-96 overflow-hidden">
-        <ClickableImage src="/table2.png" alt="" fill className="object-cover" sizes="100vw" />
-      </section>
+      <ParallaxBanner src="/dressage4.JPG" height="h-56 sm:h-72 lg:h-96" />
 
       <OtherServices otherServices={otherServices} lang={lang} sp={sp} />
       <PageFooter lang={lang} />

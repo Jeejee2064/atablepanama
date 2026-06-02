@@ -5,15 +5,15 @@ import { motion, useInView } from 'framer-motion';
 import ClickableImage from './ClickableImage';
 
 const GALLERY_IMAGES = [
-  { src: '/assiette1.png', span: 'col-span-1 row-span-2' },
-  { src: '/table2.png', span: 'col-span-1 row-span-1' },
-  { src: '/produits.png', span: 'col-span-1 row-span-1' },
-  { src: '/assiette3.png', span: 'col-span-1 row-span-1' },
-  { src: '/decorationtable.png', span: 'col-span-2 row-span-1' },
-  { src: '/ingredients.png', span: 'col-span-1 row-span-1' },
-  { src: '/assiette4.png', span: 'col-span-1 row-span-1' },
-  { src: '/chinchin.png', span: 'col-span-1 row-span-2' },
-  { src: '/produits3.png', span: 'col-span-1 row-span-1' },
+  { src: '/dressage4.JPG', span: 'col-span-1 row-span-2' },
+  { src: '/plate2.JPG', span: 'col-span-1 row-span-1' },
+  { src: '/deco1.jpeg', span: 'col-span-1 row-span-1' },
+  { src: '/assiette6.jpeg', span: 'col-span-1 row-span-1' },
+  { src: '/table1.jpeg', span: 'col-span-2 row-span-1' },
+  { src: '/market2.JPG', span: 'col-span-1 row-span-1' },
+  { src: '/products3.JPG', span: 'col-span-1 row-span-1' },
+  { src: '/dressage6.jpeg', span: 'col-span-1 row-span-2' },
+  { src: '/spice1.JPG', span: 'col-span-1 row-span-1' },
 ];
 
 export default function Gallery() {

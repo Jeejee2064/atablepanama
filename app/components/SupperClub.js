@@ -30,7 +30,7 @@ export default function SupperClub() {
     <section ref={ref} className="relative overflow-hidden" style={{ background: '#0a1628', minHeight: '80vh' }}>
       {/* Background image parallax */}
       <motion.div style={{ y: imgY }} className="absolute inset-0 scale-110">
-        <Image src="/table.png" alt="SupperClub" fill className="object-cover opacity-30" sizes="100vw" />
+        <Image src="/table2.JPG" alt="SupperClub" fill className="object-cover opacity-30" sizes="100vw" />
       </motion.div>
       {/* Overlay */}
       <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(10,22,40,0.97) 0%, rgba(10,22,40,0.75) 55%, rgba(10,22,40,0.4) 100%)' }} />
@@ -86,10 +86,10 @@ export default function SupperClub() {
           className="hidden lg:block relative h-96"
         >
           <div className="absolute top-0 right-8 w-56 h-72 overflow-hidden" style={{ border: '1px solid rgba(226,184,74,0.15)' }}>
-            <Image src="/chinchin.png" alt="" fill className="object-cover opacity-80" sizes="224px" />
+            <Image src="/dressage5.JPG" alt="" fill className="object-cover opacity-80" sizes="224px" />
           </div>
           <div className="absolute bottom-0 left-0 w-52 h-64 overflow-hidden" style={{ border: '1px solid rgba(226,184,74,0.15)' }}>
-            <Image src="/assiette1.png" alt="" fill className="object-cover opacity-80" sizes="208px" />
+            <Image src="/assiette6.jpeg" alt="" fill className="object-cover opacity-80" sizes="208px" />
           </div>
         </motion.div>
       </div>

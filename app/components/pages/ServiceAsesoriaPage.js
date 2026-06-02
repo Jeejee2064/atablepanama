@@ -8,6 +8,7 @@ import WhatsAppButton from '../WhatsAppButton';
 import PageFooter from '../PageFooter';
 import ClickableImage from '../ClickableImage';
 import PageAnchors from '../PageAnchors';
+import ParallaxBanner from '../ParallaxBanner';
 
 const PILLAR_DATA = {
   es: [
@@ -91,7 +92,7 @@ export default function ServiceAsesoriaPage({ lang, service, sp, langSlugMap, ot
           </motion.div>
         </div>
         <div className="relative h-64 sm:h-80 lg:h-auto order-1 lg:order-2 overflow-hidden">
-          <Image src="/produits.png" alt={service.title} fill className="object-cover" priority sizes="(max-width:1024px) 100vw, 50vw" />
+          <Image src="/market2.JPG" alt={service.title} fill className="object-cover" priority sizes="(max-width:1024px) 100vw, 50vw" />
           <div className="absolute inset-0 hidden lg:block" style={{ background: 'linear-gradient(to right, #faf8f3 0%, transparent 35%)' }} />
           <div className="absolute inset-0 lg:hidden" style={{ background: 'linear-gradient(to top, #faf8f3 0%, transparent 60%)' }} />
         </div>
@@ -121,7 +122,7 @@ export default function ServiceAsesoriaPage({ lang, service, sp, langSlugMap, ot
 
       {/* Galerie photos */}
       <section className="grid grid-cols-3 gap-px h-56 sm:h-72 lg:h-80">
-        {['/produits2.png', '/ingredients.png', '/produits3.png'].map((src, i) => (
+        {['/products1.JPG', '/spice1.JPG', '/products5.JPG'].map((src, i) => (
           <div key={i} className="relative overflow-hidden">
             <ClickableImage src={src} alt="" fill className="object-cover" sizes="33vw" />
           </div>
@@ -146,15 +147,12 @@ export default function ServiceAsesoriaPage({ lang, service, sp, langSlugMap, ot
       </section>
 
 
-      {/* Photo pleine largeur */}
-      <section className="relative h-64 sm:h-80 lg:h-96 overflow-hidden">
-        <ClickableImage src="/produits4.png" alt="" fill className="object-cover" sizes="100vw" />
-      </section>
+      <ParallaxBanner src="/products6.JPG" height="h-64 sm:h-80 lg:h-96" />
 
       {/* Pour qui + image */}
       <section id="sc-whom" className="grid grid-cols-1 lg:grid-cols-2">
         <div className="relative h-64 sm:h-80 lg:h-auto overflow-hidden order-2 lg:order-1">
-          <ClickableImage src="/ingredients.png" alt="Ingrédients" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
+          <ClickableImage src="/market4.JPG" alt="Ingrédients" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
         </div>
         <div className="px-6 lg:px-14 py-14 lg:py-20 bg-[#faf8f3] flex flex-col justify-center order-1 lg:order-2">
           <Tag>{service.h2_whom}</Tag>

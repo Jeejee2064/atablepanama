@@ -47,17 +47,38 @@ const OG_FALLBACKS = {
   chef: '/personalchef.png',
 };
 
-export const SEO_META = {
-  home: {
-    title: 'À table Panama | Chef Privé, Catering & Asesoría Gastronómica — Panama City',
-    description:
-      'Chef privé, traiteur haut de gamme et conseil en restauration à Panama City. Gastronomía de alto nivel para eventos privados, restaurantes y experiencias exclusivas.',
-    keywords:
-      'catering panama city, chef a domicilio panama city, asesoria restaurantes panama city, chef privado panama, traiteur panama city, private chef panama city',
-    ogImage: '/og-home.jpg',
-    canonical: SITE_URL + '/',
+const HOME_META = {
+  es: {
+    title: 'À table Panama — Alta Gastronomía en Panama City',
+    description: 'Catering de lujo, chef a domicilio, asesoría para restaurantes y SupperClub exclusivo en Panama City. Alta gastronomía al servicio de su visión.',
+    keywords: 'catering panama city, chef a domicilio panama city, asesoria restaurantes panama city, chef privado panama city, supper club panama city',
     locale: 'es_PA',
   },
+  en: {
+    title: 'À table Panama — Fine Dining & Gastronomy Services in Panama City',
+    description: 'Luxury catering, private chef, restaurant consulting and exclusive SupperClub in Panama City. Exceptional gastronomy for every occasion.',
+    keywords: 'catering panama city, private chef panama city, restaurant consulting panama city, supper club panama city, fine dining panama',
+    locale: 'en_US',
+  },
+  fr: {
+    title: 'À table Panama — Haute Gastronomie à Panama City',
+    description: 'Traiteur de luxe, chef à domicile, conseil en restauration et SupperClub exclusif à Panama City. La gastronomie d\'exception à votre service.',
+    keywords: 'traiteur panama city, chef à domicile panama city, conseil restauration panama city, supper club panama city, haute gastronomie panama',
+    locale: 'fr_FR',
+  },
+};
+
+export function getHomeMeta(lang = 'es') {
+  const m = HOME_META[lang] || HOME_META.es;
+  return {
+    ...m,
+    ogImage: '/og-home.jpg',
+    canonical: SITE_URL + '/',
+  };
+}
+
+export const SEO_META = {
+  home: getHomeMeta('es'),
 
   'es/asesoria-restaurantes-panama-city': {
     title: 'Asesoría para Restaurantes en Panama City | À table Panama',

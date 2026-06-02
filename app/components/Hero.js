@@ -6,10 +6,10 @@ import Image from 'next/image';
 import { useLanguage } from './LanguageContext';
 
 const SLIDES = [
-  { src: '/assiette1.png', alt: 'Assiette gastronomique' },
-  { src: '/table.png', alt: 'Table dressée' },
-  { src: '/chinchin.png', alt: 'Champagne' },
-  { src: '/table2.png', alt: 'Dîner élégant' },
+  { src: '/dressage3.JPG', alt: 'Assiette gastronomique' },
+  { src: '/ambiance.jpeg', alt: 'Ambiance restaurant' },
+  { src: '/deco1.jpeg', alt: 'Table dressée' },
+  { src: '/plate4.JPG', alt: 'Plat gastronomique' },
 ];
 
 export default function Hero() {
