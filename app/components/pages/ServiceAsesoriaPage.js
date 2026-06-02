@@ -111,7 +111,7 @@ export default function ServiceAsesoriaPage({ lang, service, sp, langSlugMap, ot
         <div className="grid grid-cols-1 md:grid-cols-3 border border-black/6 divide-y md:divide-y-0 md:divide-x divide-black/6">
           {pillars.map((p, i) => (
             <div key={i} className="p-7 lg:p-10">
-              <p className="font-display font-light mb-5" style={{ fontSize: '3rem', color: 'rgba(226,184,74,0.2)', lineHeight: 1 }}>{p.num}</p>
+              <p className="font-display font-light mb-5" style={{ fontSize: '3rem', color: 'rgba(226,184,74,0.55)', lineHeight: 1 }}>{p.num}</p>
               <h3 className="font-medium mb-3" style={{ fontSize: '1.15rem', color: '#111111' }}>{p.title}</h3>
               <p className="font-light" style={{ fontSize: '1rem', color: 'rgba(17,17,17,0.88)', lineHeight: 1.72 }}>{p.desc}</p>
             </div>
@@ -136,7 +136,7 @@ export default function ServiceAsesoriaPage({ lang, service, sp, langSlugMap, ot
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {process.map((step, i) => (
               <div key={i} className="flex flex-col gap-3">
-                <div className="w-7 h-7 flex-shrink-0 flex items-center justify-center border text-[0.6rem]" style={{ borderColor: 'rgba(226,184,74,0.4)', color: '#e2b84a' }}>
+                <div className="w-7 h-7 flex-shrink-0 flex items-center justify-center border text-[0.6rem]" style={{ borderColor: '#c9a84c', color: '#0a1628' }}>
                   {String(i + 1).padStart(2, '0')}
                 </div>
                 <p className="font-light" style={{ fontSize: '1rem', color: 'rgba(17,17,17,0.88)', lineHeight: 1.4 }}>{step}</p>

@@ -90,7 +90,7 @@ export default function ServiceCateringPage({ lang, service, sp, langSlugMap, ot
             <h1 className="font-display font-light text-[#111111]" style={{ fontSize: 'clamp(3rem, 7vw, 7rem)', lineHeight: 0.95 }}>
               {service.title}
             </h1>
-            <PageAnchors dark={true} sections={[
+            <PageAnchors navy sections={[
               { id: 'sc-offer', label: service.h2_offer },
               { id: 'sc-whom', label: service.h2_whom },
               { id: 'sc-approach', label: service.h2_approach },

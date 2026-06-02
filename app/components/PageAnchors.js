@@ -2,14 +2,14 @@
 
 import { motion } from 'framer-motion';
 
-export default function PageAnchors({ sections, dark = false }) {
+export default function PageAnchors({ sections, dark = false, navy = false }) {
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  const textColor = dark ? 'rgba(250,248,243,0.72)' : 'rgba(17,17,17,0.58)';
-  const borderColor = dark ? 'rgba(250,248,243,0.25)' : 'rgba(17,17,17,0.12)';
-  const arrowColor = dark ? 'rgba(250,248,243,0.30)' : 'rgba(17,17,17,0.25)';
+  const textColor = navy ? '#0a1628' : dark ? 'rgba(250,248,243,0.72)' : 'rgba(17,17,17,0.58)';
+  const borderColor = navy ? 'rgba(10,22,40,0.35)' : dark ? 'rgba(250,248,243,0.25)' : 'rgba(17,17,17,0.12)';
+  const arrowColor = navy ? 'rgba(10,22,40,0.35)' : dark ? 'rgba(250,248,243,0.30)' : 'rgba(17,17,17,0.25)';
 
   return (
     <motion.div
