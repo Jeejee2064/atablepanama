@@ -82,7 +82,7 @@ export default function Team() {
           </motion.h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 max-w-4xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 max-w-4xl mx-auto">
           {MEMBERS.map((member, i) => (
             <MemberCard key={member.key} member={member} data={t.team[member.key]} index={i} />
           ))}
