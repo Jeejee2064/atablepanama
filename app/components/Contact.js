@@ -51,19 +51,23 @@ export default function Contact() {
 
   const handleChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }));
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
     setLoading(true);
-    const subject = encodeURIComponent(`[AtablePanama] ${form.name}`);
-    const body = encodeURIComponent(
-      `Nom: ${form.name}\nEmail: ${form.email}\nTéléphone: ${form.phone}\n\n${form.message}`
-    );
-    window.location.href = `mailto:atablepanama@gmail.com?subject=${subject}&body=${body}`;
-    setTimeout(() => {
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error('send failed');
       setSent(true);
-      setLoading(false);
       setForm({ name: '', email: '', phone: '', message: '' });
-    }, 800);
+    } catch {
+      alert('Une erreur est survenue. Veuillez réessayer ou nous contacter par WhatsApp.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}`;
