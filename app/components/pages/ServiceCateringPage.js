@@ -148,9 +148,12 @@ export default function ServiceCateringPage({ lang, service, sp, langSlugMap, ot
 
       {/* Galerie ambiance */}
       <section className="grid grid-cols-2 gap-px h-56 sm:h-72">
-        {['/ambiance.jpeg', '/assiette6.jpeg'].map((src, i) => (
+        {[
+          ['/ambiance.jpeg', 'Ambiance réception catering Panama City'],
+          ['/assiette6.jpeg', 'Plat gastronomique traiteur haut de gamme Panama'],
+        ].map(([src, alt], i) => (
           <div key={i} className="relative overflow-hidden">
-            <ClickableImage src={src} alt="" fill className="object-cover" sizes="50vw" />
+            <ClickableImage src={src} alt={alt} fill className="object-cover" sizes="50vw" />
           </div>
         ))}
       </section>

@@ -5,15 +5,15 @@ import { motion, useInView } from 'framer-motion';
 import ClickableImage from './ClickableImage';
 
 const GALLERY_IMAGES = [
-  { src: '/dressage4.JPG', span: 'col-span-1 row-span-2' },
-  { src: '/plate2.JPG', span: 'col-span-1 row-span-1' },
-  { src: '/deco1.jpeg', span: 'col-span-1 row-span-1' },
-  { src: '/assiette6.jpeg', span: 'col-span-1 row-span-1' },
-  { src: '/dressage3.JPG', span: 'col-span-2 row-span-1' },
-  { src: '/market2.JPG', span: 'col-span-1 row-span-1' },
-  { src: '/products3.JPG', span: 'col-span-1 row-span-1' },
-  { src: '/dressage6.jpeg', span: 'col-span-1 row-span-2' },
-  { src: '/spice1.JPG', span: 'col-span-1 row-span-1' },
+  { src: '/dressage4.JPG', span: 'col-span-1 row-span-2', alt: 'Table dressée avec élégance — À table Panama' },
+  { src: '/plate2.JPG', span: 'col-span-1 row-span-1', alt: 'Assiette gastronomique — chef privé Panama City' },
+  { src: '/deco1.jpeg', span: 'col-span-1 row-span-1', alt: 'Décoration de table raffinée — catering Panama City' },
+  { src: '/assiette6.jpeg', span: 'col-span-1 row-span-1', alt: 'Plat gastronomique dressé — fine dining Panama' },
+  { src: '/dressage3.JPG', span: 'col-span-2 row-span-1', alt: 'Mise en place pour réception — traiteur Panama City' },
+  { src: '/market2.JPG', span: 'col-span-1 row-span-1', alt: 'Produits frais du marché — sourcing Panama City' },
+  { src: '/products3.JPG', span: 'col-span-1 row-span-1', alt: 'Ingrédients frais sélectionnés — asesoría gastronomique' },
+  { src: '/dressage6.jpeg', span: 'col-span-1 row-span-2', alt: 'Ambiance dîner privé — SupperClub Panama City' },
+  { src: '/spice1.JPG', span: 'col-span-1 row-span-1', alt: 'Épices et ingrédients de qualité — haute gastronomie Panama' },
 ];
 
 export default function Gallery() {
@@ -44,7 +44,7 @@ export default function Gallery() {
             >
               <ClickableImage
                 src={img.src}
-                alt=""
+                alt={img.alt}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"

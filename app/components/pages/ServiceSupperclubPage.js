@@ -98,9 +98,13 @@ export default function ServiceSupperclubPage({ lang, service, sp, langSlugMap, 
 
       {/* Photos ambiance */}
       <section className="grid grid-cols-1 sm:grid-cols-3 gap-px" style={{ background: '#faf8f3', height: 'clamp(280px, 35vw, 420px)' }}>
-        {['/dressage5.JPG', '/assiette6.jpeg', '/table2.jpeg'].map((src, i) => (
+        {[
+          ['/dressage5.JPG', 'Table dressée SupperClub Panama City'],
+          ['/assiette6.jpeg', 'Assiette dégustation — dîner exclusif Panama'],
+          ['/table2.jpeg', 'Ambiance dîner privé Panama City'],
+        ].map(([src, alt], i) => (
           <div key={i} className="relative overflow-hidden">
-            <ClickableImage src={src} alt="" fill className="object-cover" sizes="(max-width:640px) 100vw, 33vw" />
+            <ClickableImage src={src} alt={alt} fill className="object-cover" sizes="(max-width:640px) 100vw, 33vw" />
           </div>
         ))}
       </section>

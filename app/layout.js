@@ -69,7 +69,6 @@ export const metadata = {
       "Catering de lujo, chef a domicilio, asesoría para restaurantes y SupperClub exclusivo en Panama City. Alta gastronomía al servicio de su visión.",
     url: SITE_URL,
     locale: "es_PA",
-    alternateLocale: ["en_US", "fr_FR"],
     images: [
       {
         url: "/og-home.jpg",

@@ -127,9 +127,13 @@ export default function ServiceAsesoriaPage({ lang, service, sp, langSlugMap, ot
 
       {/* Galerie photos */}
       <section className="grid grid-cols-3 gap-px h-56 sm:h-72 lg:h-80">
-        {['/products1.JPG', '/spice1.JPG', '/products5.JPG'].map((src, i) => (
+        {[
+          ['/products1.JPG', 'Produits frais marché Panama City — conseil gastronomique'],
+          ['/spice1.JPG', 'Épices et ingrédients sélectionnés — asesoría gastronómica Panama'],
+          ['/products5.JPG', 'Sélection de produits locaux — consultoría restaurantes Panama'],
+        ].map(([src, alt], i) => (
           <div key={i} className="relative overflow-hidden">
-            <ClickableImage src={src} alt="" fill className="object-cover" sizes="33vw" />
+            <ClickableImage src={src} alt={alt} fill className="object-cover" sizes="33vw" />
           </div>
         ))}
       </section>

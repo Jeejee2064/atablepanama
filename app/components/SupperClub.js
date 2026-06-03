@@ -86,10 +86,10 @@ export default function SupperClub() {
           className="hidden lg:block relative h-96"
         >
           <div className="absolute top-0 right-8 w-56 h-72 overflow-hidden" style={{ border: '1px solid rgba(226,184,74,0.15)' }}>
-            <Image src="/dressage5.JPG" alt="" fill className="object-cover opacity-80" sizes="224px" />
+            <Image src="/dressage5.JPG" alt="Table dressée pour le SupperClub Panama City" fill className="object-cover opacity-80" sizes="224px" />
           </div>
           <div className="absolute bottom-0 left-0 w-52 h-64 overflow-hidden" style={{ border: '1px solid rgba(226,184,74,0.15)' }}>
-            <Image src="/assiette6.jpeg" alt="" fill className="object-cover opacity-80" sizes="208px" />
+            <Image src="/assiette6.jpeg" alt="Assiette gastronomique — dîner exclusif Panama" fill className="object-cover opacity-80" sizes="208px" />
           </div>
         </motion.div>
       </div>

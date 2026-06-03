@@ -106,9 +106,13 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
 
       {/* Galerie assiettes */}
       <section className="grid grid-cols-3 gap-px h-48 sm:h-64">
-        {['/plate3.JPG', '/products3.JPG', '/assiette6.jpeg'].map((src, i) => (
+        {[
+          ['/plate3.JPG', 'Assiette gastronomique dressée — chef privé Panama City'],
+          ['/products3.JPG', 'Produits frais sélectionnés — chef à domicile Panama'],
+          ['/assiette6.jpeg', 'Plat gastronomique — fine dining à domicile Panama City'],
+        ].map(([src, alt], i) => (
           <div key={i} className="relative overflow-hidden">
-            <ClickableImage src={src} alt="" fill className="object-cover" sizes="33vw" />
+            <ClickableImage src={src} alt={alt} fill className="object-cover" sizes="33vw" />
           </div>
         ))}
       </section>
@@ -151,9 +155,14 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
           </Link>
         </div>
         <div className="grid grid-cols-2 grid-rows-2 h-64 sm:h-80 lg:h-auto order-2">
-          {['/plate1.JPG', '/plate2.JPG', '/plate4.JPG', '/plate5.JPG'].map((src, i) => (
+          {[
+            ['/plate1.JPG', 'Dîner privé gastronomique Panama City'],
+            ['/plate2.JPG', 'Assiette chef à domicile Panama'],
+            ['/plate4.JPG', 'Menu personnalisé chef privé Panama City'],
+            ['/plate5.JPG', 'Service complet chef à domicile Panama'],
+          ].map(([src, alt], i) => (
             <div key={i} className="relative overflow-hidden">
-              <ClickableImage src={src} alt="" fill className="object-cover" sizes="(max-width:1024px) 50vw, 25vw" />
+              <ClickableImage src={src} alt={alt} fill className="object-cover" sizes="(max-width:1024px) 50vw, 25vw" />
             </div>
           ))}
         </div>

@@ -39,7 +39,7 @@ export default function Hero() {
         <motion.div
           key={slide.src}
           className="absolute inset-0"
-          initial={{ opacity: 0 }}
+          initial={{ opacity: i === 0 ? 1 : 0 }}
           animate={{ opacity: activeSlide === i ? 1 : 0 }}
           transition={{ duration: 1.4, ease: 'easeInOut' }}
         >
