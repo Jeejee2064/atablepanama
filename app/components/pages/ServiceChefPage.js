@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import FadeImage from '../FadeImage';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import LangSwitcher from '../LangSwitcher';
@@ -9,6 +10,7 @@ import PageFooter from '../PageFooter';
 import ClickableImage from '../ClickableImage';
 import PageAnchors from '../PageAnchors';
 import ParallaxBanner from '../ParallaxBanner';
+import FaqSection from '../FaqSection';
 
 const STEPS = {
   es: [
@@ -72,7 +74,7 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
       {/* Hero — image chef plein fond sur mobile, split sur desktop */}
       <section className="grid grid-cols-1 lg:grid-cols-5 min-h-screen">
         <div className="relative h-72 sm:h-96 lg:h-auto lg:col-span-3 overflow-hidden order-1">
-          <Image src="/cuisine1.JPG" alt={service.title} fill className="object-cover object-top" priority sizes="(max-width:1024px) 100vw, 60vw" />
+          <FadeImage src="/cuisine1.JPG" alt={service.title} fill className="object-cover object-top" priority sizes="(max-width:1024px) 100vw, 60vw" duration={800} />
           <div className="absolute inset-0 hidden lg:block" style={{ background: 'linear-gradient(to right, transparent 55%, #faf8f3 100%)' }} />
           <div className="absolute inset-0 lg:hidden" style={{ background: 'linear-gradient(to top, #faf8f3 0%, transparent 55%)' }} />
         </div>
@@ -115,7 +117,7 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
       <section id="sc-approach" className="bg-[#ede9df] px-6 lg:px-16 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto">
           <Tag>{service.h2_approach}</Tag>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-black/6 border border-black/6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-black/6 border border-black/6 mb-8">
             {steps.map((step, i) => (
               <div key={i} className="p-7 lg:p-8">
                 <p className="font-display font-light mb-4" style={{ fontSize: '2.8rem', color: 'rgba(226,184,74,0.15)', lineHeight: 1 }}>{step.n}</p>
@@ -124,6 +126,9 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
               </div>
             ))}
           </div>
+          {service.approach_text && (
+            <p className="max-w-3xl font-light" style={{ fontSize: '1rem', color: 'rgba(17,17,17,0.72)', lineHeight: 1.8 }}>{service.approach_text}</p>
+          )}
         </div>
       </section>
 
@@ -131,6 +136,9 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
       <section id="sc-whom" className="grid grid-cols-1 lg:grid-cols-2">
         <div className="px-6 lg:px-14 py-14 lg:py-20 bg-[#faf8f3] flex flex-col justify-center order-1">
           <Tag>{service.h2_whom}</Tag>
+          {service.whom_text && (
+            <p className="font-light mb-8" style={{ fontSize: '1rem', color: 'rgba(17,17,17,0.72)', lineHeight: 1.8 }}>{service.whom_text}</p>
+          )}
           <ul className="flex flex-col gap-4 mb-10">
             {occasions.map((item, i) => (
               <li key={i} className="flex items-center gap-4 font-light" style={{ fontSize: '1.05rem', color: 'rgba(17,17,17,0.88)' }}>
@@ -155,6 +163,9 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
       <section id="sc-offer" className="bg-[#ede9df] px-6 lg:px-16 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto">
           <Tag>{service.h2_offer}</Tag>
+          {service.offer_text && (
+            <p className="max-w-3xl font-light mb-8" style={{ fontSize: '1rem', color: 'rgba(17,17,17,0.72)', lineHeight: 1.8 }}>{service.offer_text}</p>
+          )}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {service.items.map((item, i) => (
               <div key={i} className="p-5 border font-light" style={{ borderColor: 'rgba(226,184,74,0.15)', fontSize: '1rem', color: 'rgba(17,17,17,0.88)', lineHeight: 1.5 }}>
@@ -167,6 +178,7 @@ export default function ServiceChefPage({ lang, service, sp, langSlugMap, otherS
 
       <ParallaxBanner src="/dressage4.JPG" height="h-56 sm:h-72 lg:h-96" />
 
+      <FaqSection faq={service.faq} lang={lang} />
       <OtherServices otherServices={otherServices} lang={lang} sp={sp} />
       <PageFooter lang={lang} />
       <WhatsAppButton />

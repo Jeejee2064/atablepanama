@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import FadeImage from '../FadeImage';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import LangSwitcher from '../LangSwitcher';
@@ -9,6 +10,7 @@ import PageFooter from '../PageFooter';
 import ClickableImage from '../ClickableImage';
 import PageAnchors from '../PageAnchors';
 import ParallaxBanner from '../ParallaxBanner';
+import FaqSection from '../FaqSection';
 
 const PILLAR_DATA = {
   es: [
@@ -92,7 +94,7 @@ export default function ServiceAsesoriaPage({ lang, service, sp, langSlugMap, ot
           </motion.div>
         </div>
         <div className="relative h-64 sm:h-80 lg:h-auto order-1 lg:order-2 overflow-hidden">
-          <Image src="/market2.JPG" alt={service.title} fill className="object-cover" priority sizes="(max-width:1024px) 100vw, 50vw" />
+          <FadeImage src="/market2.JPG" alt={service.title} fill className="object-cover" priority sizes="(max-width:1024px) 100vw, 50vw" duration={800} />
           <div className="absolute inset-0 hidden lg:block" style={{ background: 'linear-gradient(to right, #faf8f3 0%, transparent 35%)' }} />
           <div className="absolute inset-0 lg:hidden" style={{ background: 'linear-gradient(to top, #faf8f3 0%, transparent 60%)' }} />
         </div>
@@ -108,6 +110,9 @@ export default function ServiceAsesoriaPage({ lang, service, sp, langSlugMap, ot
       {/* 3 piliers */}
       <section id="sc-offer" className="px-6 lg:px-16 py-16 lg:py-24 max-w-7xl mx-auto">
         <Tag>{service.h2_offer}</Tag>
+        {service.offer_text && (
+          <p className="font-light mb-10 max-w-3xl" style={{ fontSize: '1rem', color: 'rgba(17,17,17,0.72)', lineHeight: 1.8 }}>{service.offer_text}</p>
+        )}
         <div className="grid grid-cols-1 md:grid-cols-3 border border-black/6 divide-y md:divide-y-0 md:divide-x divide-black/6">
           {pillars.map((p, i) => (
             <div key={i} className="p-7 lg:p-10">
@@ -133,6 +138,9 @@ export default function ServiceAsesoriaPage({ lang, service, sp, langSlugMap, ot
       <section id="sc-approach" className="bg-[#ede9df] px-6 lg:px-16 py-16 lg:py-24">
         <div className="max-w-7xl mx-auto">
           <Tag>{service.h2_approach}</Tag>
+          {service.approach_text && (
+            <p className="font-light mb-10 max-w-3xl" style={{ fontSize: '1rem', color: 'rgba(17,17,17,0.72)', lineHeight: 1.8 }}>{service.approach_text}</p>
+          )}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {process.map((step, i) => (
               <div key={i} className="flex flex-col gap-3">
@@ -156,6 +164,9 @@ export default function ServiceAsesoriaPage({ lang, service, sp, langSlugMap, ot
         </div>
         <div className="px-6 lg:px-14 py-14 lg:py-20 bg-[#faf8f3] flex flex-col justify-center order-1 lg:order-2">
           <Tag>{service.h2_whom}</Tag>
+          {service.whom_text && (
+            <p className="font-light mb-6" style={{ fontSize: '1rem', color: 'rgba(17,17,17,0.72)', lineHeight: 1.8 }}>{service.whom_text}</p>
+          )}
           <ul className="flex flex-col gap-4">
             {forWhom.map((item, i) => (
               <li key={i} className="flex items-center gap-4 font-light" style={{ fontSize: '1.05rem', color: 'rgba(17,17,17,0.88)' }}>
@@ -166,6 +177,7 @@ export default function ServiceAsesoriaPage({ lang, service, sp, langSlugMap, ot
         </div>
       </section>
 
+      <FaqSection faq={service.faq} lang={lang} />
       <OtherServices otherServices={otherServices} lang={lang} sp={sp} />
       <PageFooter lang={lang} />
       <WhatsAppButton />

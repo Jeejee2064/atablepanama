@@ -91,6 +91,14 @@ export default function Footer() {
               <a href="mailto:atablepanama@gmail.com" className="text-sm text-[#111111]/75 hover:text-gold transition-colors font-light" style={{ textDecoration: 'none' }}>
                 atablepanama@gmail.com
               </a>
+              <a href="https://www.instagram.com/atable.panama/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-[#111111]/75 hover:text-gold transition-colors font-light" style={{ textDecoration: 'none' }}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: 15, height: 15, flexShrink: 0 }}>
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none" />
+                </svg>
+                @atable.panama
+              </a>
               <p className="text-sm text-[#111111]/55 font-light leading-relaxed">
                 Local 1, Edificio Antigua Domingo<br />Plaza Santa Ana, Panama City
               </p>
@@ -103,7 +111,12 @@ export default function Footer() {
           <p className="text-[10px] tracking-[0.2em] uppercase text-[#111111]/45">
             © {year} À table Panama — {t.footer.rights}
           </p>
-          <div className="w-8 h-px bg-gold/40" />
+          <p className="text-[10px] tracking-[0.12em] text-[#111111]/35">
+            {t.footer.madeBy}{' '}
+            <a href="https://bocasdigital.com" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors" style={{ textDecoration: 'none' }}>
+              Bocas Digital
+            </a>
+          </p>
         </div>
       </div>
     </footer>

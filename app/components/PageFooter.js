@@ -8,6 +8,12 @@ const RIGHTS = {
   fr: 'Tous droits réservés',
 };
 
+const MADE_BY = {
+  es: 'Sitio web realizado por',
+  en: 'Website made by',
+  fr: 'Site web réalisé par',
+};
+
 const TAGLINES = {
   es: 'Alta gastronomía en Ciudad de Panamá',
   en: 'Fine dining in Panama City',
@@ -96,6 +102,14 @@ export default function PageFooter({ lang = 'es' }) {
               <a href="mailto:atablepanama@gmail.com" className="text-sm font-light" style={{ color: 'rgba(17,17,17,0.72)', textDecoration: 'none' }}>
                 atablepanama@gmail.com
               </a>
+              <a href="https://www.instagram.com/atable.panama/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-light" style={{ color: 'rgba(17,17,17,0.72)', textDecoration: 'none' }}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: 15, height: 15, flexShrink: 0 }}>
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none" />
+                </svg>
+                @atable.panama
+              </a>
               <p className="text-sm font-light leading-relaxed" style={{ color: 'rgba(17,17,17,0.45)' }}>
                 Local 1, Edificio Antigua Domingo<br />Plaza Santa Ana, Panama City
               </p>
@@ -108,7 +122,12 @@ export default function PageFooter({ lang = 'es' }) {
           <p className="text-[0.6rem] tracking-[0.15em] uppercase" style={{ color: 'rgba(17,17,17,0.38)' }}>
             © {year} À table Panama — {RIGHTS[lang]}
           </p>
-          <div className="w-8 h-px" style={{ background: 'rgba(226,184,74,0.4)' }} />
+          <p className="text-[0.6rem] tracking-[0.1em]" style={{ color: 'rgba(17,17,17,0.3)' }}>
+            {MADE_BY[lang]}{' '}
+            <a href="https://bocasdigital.com" target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(17,17,17,0.45)', textDecoration: 'none' }}>
+              Bocas Digital
+            </a>
+          </p>
         </div>
       </div>
     </footer>

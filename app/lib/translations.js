@@ -28,6 +28,12 @@ export const translations = {
         whom_text: 'Restaurantes en apertura, establecimientos en búsqueda de una segunda vida, hoteles boutique, operadores de food & beverage. Todo proyecto que aspire a la excelencia culinaria en Ciudad de Panamá.',
         h2_approach: 'Nuestro enfoque',
         approach_text: 'En À table Panama, la consultoría no es un documento de recomendaciones: es una inmersión en su cocina. Trabajamos codo a codo con sus equipos, comprendemos su cultura, sus proveedores, sus clientes. Solo entonces diseñamos soluciones que perduran.',
+        faq: [
+          { q: '¿En qué consiste la asesoría gastronómica para restaurantes en Panama City?', a: 'Ofrecemos un diagnóstico completo y un acompañamiento personalizado: diseño o rediseño de menú, optimización de costos, formación de equipos de cocina y sala, selección de proveedores locales y estrategia de posicionamiento.' },
+          { q: '¿Cuánto tiempo dura una misión de consultoría?', a: 'Las misiones van de 2 semanas para una intervención puntual (rediseño de menú, formación) hasta 3 a 6 meses para una reestructuración completa del establecimiento.' },
+          { q: '¿Trabajan también con restaurantes ya en funcionamiento, no solo en apertura?', a: 'Sí. Acompañamos tanto proyectos en apertura como establecimientos ya operativos que buscan optimizar su rentabilidad, reposicionarse o mejorar la experiencia de sus comensales.' },
+          { q: '¿Solo trabajan en Panama City?', a: 'Nuestra base es Panama City, pero realizamos misiones en toda la región centroamericana y el Caribe.' },
+        ],
       },
       catering: {
         tag: 'Catering',
@@ -42,6 +48,12 @@ export const translations = {
         whom_text: 'Particulares para celebraciones privadas, empresas para eventos corporativos, organizadores de congresos internacionales, hoteles y resorts, embajadas y recepciones diplomáticas en Panamá.',
         h2_approach: 'Nuestro enfoque',
         approach_text: 'Cada evento tiene su propia identidad. Escuchamos su visión, entendemos su público y construimos una propuesta gastronómica que la refleja con precisión. La calidad de los productos, la elegancia del servicio y la puntualidad son no negociables.',
+        faq: [
+          { q: '¿Cuál es el número mínimo de personas para un servicio de catering en Panama City?', a: 'Trabajamos desde eventos íntimos de 10 personas hasta congresos y recepciones de varios cientos de comensales. Cada propuesta es completamente personalizada.' },
+          { q: '¿Ofrecen catering para bodas en Panama City?', a: 'Sí. Realizamos catering completo para bodas y celebraciones: menú personalizado para la ocasión, vajilla y cristalería de alto nivel, servicio de sala y coordinación logística.' },
+          { q: '¿Pueden adaptar el menú a dietas especiales o intolerancias alimentarias?', a: 'Absolutamente. Diseñamos menús adaptados a cualquier restricción: vegetariano, vegano, sin gluten, sin lactosa, kosher y más. Basta con indicárnoslo al hacer la solicitud.' },
+          { q: '¿En qué tipo de espacios trabajan para eventos en Panamá?', a: 'Trabajamos en villas privadas, hoteles, terrazas, country clubs, embajadas, residencias y espacios de eventos privados en toda Panama City y sus alrededores.' },
+        ],
       },
       chef: {
         tag: 'Chef Privado',
@@ -56,6 +68,12 @@ export const translations = {
         whom_text: 'Parejas en busca de una cena romántica excepcional, familias para ocasiones especiales, ejecutivos que reciben clientes o socios en casa, residentes expatriados en Ciudad de Panamá que desean una experiencia gastronómica de nivel.',
         h2_approach: 'Nuestro enfoque',
         approach_text: 'El chef llega, transforma su cocina en un laboratorio de sabores y desaparece discretamente, dejando solo el recuerdo de una velada extraordinaria. Cada menú es una composición única, adaptada a sus gustos, sus intolerancias y la estación.',
+        faq: [
+          { q: '¿Cuánto cuesta contratar un chef privado en Panama City?', a: 'El precio varía según el menú, el número de comensales y la duración del servicio. Contáctenos para recibir una propuesta personalizada sin compromiso.' },
+          { q: '¿Qué incluye exactamente el servicio de chef a domicilio?', a: 'El chef se ocupa de todo: diseño del menú según sus preferencias, compra de productos frescos del mercado ese mismo día, preparación en su cocina, emplatado, servicio a mesa y limpieza final. Usted solo disfruta.' },
+          { q: '¿Para cuántas personas puede ofrecer el servicio el chef privado?', a: 'Nuestro chef privado en Panama City atiende desde cenas románticas de 2 personas hasta reuniones y celebraciones de hasta 20 comensales.' },
+          { q: '¿Con cuánta antelación hay que reservar el chef a domicilio?', a: 'Recomendamos reservar con al menos 48 a 72 horas de antelación para garantizar la disponibilidad del chef y una selección óptima de productos frescos de mercado.' },
+        ],
       },
       supperclub: {
         tag: 'Supper Club',
@@ -75,6 +93,12 @@ export const translations = {
         limitedSeats: 'Plazas limitadas',
         privatize: '¿Quiere privatizar una edición?',
         privatizeDesc: 'Organizamos ediciones privadas para grupos, empresas o celebraciones especiales.',
+        faq: [
+          { q: '¿Cuántas personas asisten a cada edición del SupperClub?', a: 'Cada edición es intencionalmente pequeña — entre 8 y 12 comensales — para garantizar una experiencia verdaderamente íntima y una interacción cercana con el chef.' },
+          { q: '¿Qué tipo de cocina se sirve en el SupperClub de Panama City?', a: 'Cada edición presenta un menú degustación de varios tiempos, inspirado en técnicas francesas, ingredientes locales de temporada y sabores del mundo. El concepto cambia en cada edición.' },
+          { q: '¿Se puede organizar un SupperClub privado en Panama City?', a: 'Sí. Organizamos ediciones privadas para grupos, empresas o celebraciones especiales. Contáctenos para diseñar su experiencia a medida.' },
+          { q: '¿Cómo me entero de las próximas fechas?', a: 'Las fechas se anuncian por correo y en nuestras redes sociales. Contáctenos para ser añadido a la lista prioritaria de notificaciones.' },
+        ],
       },
     },
     team: {
@@ -110,6 +134,7 @@ export const translations = {
     footer: {
       tagline: 'Alta gastronomía en Ciudad de Panamá',
       rights: 'Todos los derechos reservados',
+      madeBy: 'Sitio web realizado por',
     },
     servicePage: {
       backHome: '← Inicio',
@@ -147,6 +172,12 @@ export const translations = {
         whom_text: 'Opening restaurants, established venues seeking a new direction, boutique hotels, food & beverage operators — any project aspiring to culinary excellence in Panama City.',
         h2_approach: 'Our approach',
         approach_text: 'At À table Panama, consulting is not a report of recommendations: it is an immersion in your kitchen. We work side by side with your teams, understand your culture, your suppliers, your guests. Only then do we design solutions that last.',
+        faq: [
+          { q: 'What does restaurant consulting in Panama City include?', a: 'We offer a complete diagnosis and personalized support: menu design or redesign, cost optimization, kitchen and front-of-house team training, local supplier selection and positioning strategy.' },
+          { q: 'How long does a consulting engagement last?', a: 'Engagements range from 2 weeks for a targeted intervention (menu redesign, training) to 3–6 months for a full operational restructure.' },
+          { q: 'Do you work with restaurants that are already open, not just new openings?', a: 'Yes. We support both new openings and existing establishments looking to optimize profitability, reposition themselves or improve the guest experience.' },
+          { q: 'Do you only work in Panama City?', a: 'Our base is Panama City, but we take on engagements across Central America and the Caribbean.' },
+        ],
       },
       catering: {
         tag: 'Catering',
@@ -161,6 +192,12 @@ export const translations = {
         whom_text: 'Private individuals hosting celebrations, companies running corporate events, international congress organizers, hotels and resorts, embassies and diplomatic receptions in Panama City.',
         h2_approach: 'Our approach',
         approach_text: 'Every event has its own identity. We listen to your vision, understand your guests and build a gastronomic proposal that reflects it precisely. Product quality, service elegance and punctuality are non-negotiable.',
+        faq: [
+          { q: 'What is the minimum number of guests for catering in Panama City?', a: 'We handle events from intimate gatherings of 10 to congresses and receptions of several hundred guests. Every proposal is fully tailored.' },
+          { q: 'Do you offer wedding catering in Panama City?', a: 'Yes. We provide full-service catering for weddings and celebrations: a bespoke menu for the occasion, premium tableware, waitstaff and full logistics coordination.' },
+          { q: 'Can you accommodate dietary restrictions or food allergies?', a: 'Absolutely. We design menus for any dietary need: vegetarian, vegan, gluten-free, lactose-free, kosher and more. Simply let us know when you get in touch.' },
+          { q: 'What types of venues do you work in for events in Panama?', a: 'We work in private villas, hotels, rooftops, country clubs, embassies, private residences and event spaces throughout Panama City and its surroundings.' },
+        ],
       },
       chef: {
         tag: 'Private Chef',
@@ -175,6 +212,12 @@ export const translations = {
         whom_text: 'Couples looking for an extraordinary romantic dinner, families marking special occasions, executives entertaining clients at home, expatriate residents in Panama City seeking a top-tier gastronomic experience.',
         h2_approach: 'Our approach',
         approach_text: 'The chef arrives, transforms your kitchen into a laboratory of flavors, and quietly disappears — leaving only the memory of an extraordinary evening. Every menu is a unique composition, tailored to your tastes, dietary requirements and the season.',
+        faq: [
+          { q: 'How much does a private chef in Panama City cost?', a: 'Pricing depends on the menu, number of guests and length of service. Contact us for a no-obligation personalized quote.' },
+          { q: 'What exactly does the private chef service include?', a: 'The chef handles everything: menu design based on your preferences, shopping for fresh market produce that morning, cooking in your kitchen, plating, table service and clean-up. You simply enjoy.' },
+          { q: 'How many guests can the private chef serve?', a: 'Our private chef in Panama City caters for intimate dinners of 2 all the way to gatherings and celebrations of up to 20 guests.' },
+          { q: 'How far in advance should I book the private chef?', a: 'We recommend booking at least 48–72 hours in advance to guarantee the chef\'s availability and optimal sourcing of fresh market produce.' },
+        ],
       },
       supperclub: {
         tag: 'Supper Club',
@@ -194,6 +237,12 @@ export const translations = {
         limitedSeats: 'Limited seats',
         privatize: 'Want to privatize an edition?',
         privatizeDesc: 'We organize private editions for groups, companies or special celebrations.',
+        faq: [
+          { q: 'How many people attend each SupperClub edition?', a: 'Each edition is intentionally small — between 8 and 12 guests — to ensure a truly intimate experience and close interaction with the chef.' },
+          { q: 'What kind of food is served at the Panama City SupperClub?', a: 'Each edition features a unique multi-course tasting menu inspired by French technique, seasonal local ingredients and world flavors. The concept changes every edition.' },
+          { q: 'Can I organize a private SupperClub in Panama City?', a: 'Yes. We organize private editions for groups, companies or special celebrations. Contact us to design your bespoke experience.' },
+          { q: 'How do I find out about upcoming dates?', a: 'Dates are announced by email and on our social media. Contact us to be added to the priority notification list.' },
+        ],
       },
     },
     team: {
@@ -229,6 +278,7 @@ export const translations = {
     footer: {
       tagline: 'Fine dining in Panama City',
       rights: 'All rights reserved',
+      madeBy: 'Website made by',
     },
     servicePage: {
       backHome: '← Home',
@@ -266,6 +316,12 @@ export const translations = {
         whom_text: "Restaurants en ouverture, établissements en quête d'un nouveau souffle, hôtels boutique, opérateurs food & beverage — tout projet aspirant à l'excellence culinaire à Panama City.",
         h2_approach: 'Notre approche',
         approach_text: "Chez À table Panama, le conseil n'est pas un document de recommandations : c'est une immersion dans votre cuisine. Nous travaillons côte à côte avec vos équipes, comprenons votre culture, vos fournisseurs, vos clients. C'est seulement alors que nous concevons des solutions durables.",
+        faq: [
+          { q: "En quoi consiste le conseil en restauration à Panama City ?", a: "Nous proposons un diagnostic complet et un accompagnement personnalisé : conception ou refonte de menu, optimisation des coûts, formation des équipes de cuisine et de salle, sélection de fournisseurs locaux et stratégie de positionnement." },
+          { q: "Combien de temps dure une mission de conseil ?", a: "Les missions vont de 2 semaines pour une intervention ciblée (refonte de menu, formation) à 3 à 6 mois pour une restructuration complète de l'établissement." },
+          { q: "Travaillez-vous aussi avec des restaurants déjà en activité, pas seulement en ouverture ?", a: "Oui. Nous accompagnons aussi bien les projets en ouverture que les établissements déjà opérationnels souhaitant optimiser leur rentabilité, se repositionner ou améliorer l'expérience de leurs clients." },
+          { q: "Intervenez-vous uniquement à Panama City ?", a: "Notre base est Panama City, mais nous réalisons des missions dans toute la région d'Amérique centrale et des Caraïbes." },
+        ],
       },
       catering: {
         tag: 'Traiteur',
@@ -280,6 +336,12 @@ export const translations = {
         whom_text: "Particuliers pour des célébrations privées, entreprises pour des événements corporate, organisateurs de congrès internationaux, hôtels et resorts, ambassades et réceptions diplomatiques à Panama City.",
         h2_approach: 'Notre approche',
         approach_text: "Chaque événement a sa propre identité. Nous écoutons votre vision, comprenons vos invités et construisons une proposition gastronomique qui la reflète avec précision. La qualité des produits, l'élégance du service et la ponctualité sont non négociables.",
+        faq: [
+          { q: "Quel est le nombre minimum de personnes pour un service traiteur à Panama City ?", a: "Nous intervenons depuis des événements intimes de 10 personnes jusqu'à des congrès et réceptions de plusieurs centaines de convives. Chaque proposition est entièrement personnalisée." },
+          { q: "Proposez-vous un service traiteur pour les mariages à Panama City ?", a: "Oui. Nous assurons un service traiteur complet pour les mariages et célébrations : menu sur mesure, vaisselle et verrerie haut de gamme, service en salle et coordination logistique." },
+          { q: "Pouvez-vous adapter le menu aux régimes spéciaux ou aux intolérances alimentaires ?", a: "Absolument. Nous concevons des menus adaptés à toute contrainte : végétarien, végétalien, sans gluten, sans lactose, kasher et plus encore. Il suffit de nous le préciser lors de votre demande." },
+          { q: "Dans quel type d'espaces intervenez-vous pour les événements au Panama ?", a: "Nous intervenons dans des villas privées, hôtels, rooftops, country clubs, ambassades, résidences privées et espaces événementiels dans tout Panama City et ses environs." },
+        ],
       },
       chef: {
         tag: 'Chef Privé',
@@ -294,6 +356,12 @@ export const translations = {
         whom_text: "Couples en quête d'un dîner romantique exceptionnel, familles pour des occasions spéciales, dirigeants recevant clients ou associés à domicile, résidents expatriés à Panama City souhaitant une expérience gastronomique de niveau.",
         h2_approach: 'Notre approche',
         approach_text: "Le chef arrive, transforme votre cuisine en laboratoire de saveurs et disparaît discrètement — ne laissant que le souvenir d'une soirée extraordinaire. Chaque menu est une composition unique, adaptée à vos goûts, vos intolérances et la saison.",
+        faq: [
+          { q: "Combien coûte un chef à domicile à Panama City ?", a: "Le tarif varie selon le menu, le nombre de convives et la durée de la prestation. Contactez-nous pour recevoir un devis personnalisé sans engagement." },
+          { q: "Que comprend exactement le service de chef à domicile ?", a: "Le chef s'occupe de tout : conception du menu selon vos préférences, courses de produits frais du marché le matin même, préparation dans votre cuisine, dressage, service à table et nettoyage. Vous n'avez qu'à profiter." },
+          { q: "Pour combien de personnes le chef privé peut-il intervenir ?", a: "Notre chef à domicile à Panama City prend en charge des dîners romantiques pour 2 personnes comme des réceptions jusqu'à 20 convives." },
+          { q: "Combien de temps à l'avance faut-il réserver le chef à domicile ?", a: "Nous recommandons de réserver au moins 48 à 72 heures à l'avance pour garantir la disponibilité du chef et un approvisionnement optimal en produits frais." },
+        ],
       },
       supperclub: {
         tag: 'Supper Club',
@@ -313,6 +381,12 @@ export const translations = {
         limitedSeats: 'Places limitées',
         privatize: 'Souhaitez-vous privatiser une édition ?',
         privatizeDesc: "Nous organisons des éditions privées pour des groupes, des entreprises ou des célébrations spéciales.",
+        faq: [
+          { q: "Combien de personnes participent à chaque édition du SupperClub ?", a: "Chaque édition est volontairement petite — entre 8 et 12 convives — pour garantir une expérience véritablement intime et une interaction proche du chef." },
+          { q: "Quelle cuisine est servie au SupperClub de Panama City ?", a: "Chaque édition propose un menu dégustation unique de plusieurs services, inspiré des techniques françaises, des ingrédients locaux de saison et des saveurs du monde. Le concept change à chaque édition." },
+          { q: "Peut-on organiser un SupperClub privé à Panama City ?", a: "Oui. Nous organisons des éditions privées pour des groupes, des entreprises ou des célébrations spéciales. Contactez-nous pour concevoir votre expérience sur mesure." },
+          { q: "Comment être informé des prochaines dates ?", a: "Les dates sont annoncées par e-mail et sur nos réseaux sociaux. Contactez-nous pour être ajouté à la liste de notification prioritaire." },
+        ],
       },
     },
     team: {
@@ -348,6 +422,7 @@ export const translations = {
     footer: {
       tagline: 'Haute gastronomie à Panama City',
       rights: 'Tous droits réservés',
+      madeBy: 'Site web réalisé par',
     },
     servicePage: {
       backHome: '← Accueil',
@@ -370,23 +445,4 @@ export const SLUG_MAP = {
   'es/supper-club-panama-city':            { service: 'supperclub' },
   'en/supper-club-panama-city':            { service: 'supperclub' },
   'fr/supper-club-panama-city':            { service: 'supperclub' },
-};
-
-export const SERVICE_IMAGES = {
-  asesoria: {
-    hero: '/produits.png',
-    gallery: ['/produits2.png', '/ingredients.png'],
-  },
-  catering: {
-    hero: '/decorationtable.png',
-    gallery: ['/table3.png', '/produits3.png'],
-  },
-  chef: {
-    hero: '/personalchef.png',
-    gallery: ['/assiette2.png', '/assiette3.png'],
-  },
-  supperclub: {
-    hero: '/table.png',
-    gallery: ['/chinchin.png', '/assiette1.png'],
-  },
 };

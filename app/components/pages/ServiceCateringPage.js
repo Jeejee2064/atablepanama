@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import FadeImage from '../FadeImage';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import LangSwitcher from '../LangSwitcher';
@@ -9,6 +10,7 @@ import PageFooter from '../PageFooter';
 import ClickableImage from '../ClickableImage';
 import PageAnchors from '../PageAnchors';
 import ParallaxBanner from '../ParallaxBanner';
+import FaqSection from '../FaqSection';
 
 const EVENT_TYPES = {
   es: [
@@ -82,7 +84,7 @@ export default function ServiceCateringPage({ lang, service, sp, langSlugMap, ot
       </header>
 
       <section className="relative h-screen min-h-[580px] overflow-hidden">
-        <Image src="/dressage2.JPG" alt={service.title} fill className="object-cover" priority sizes="100vw" />
+        <FadeImage src="/dressage2.JPG" alt={service.title} fill className="object-cover" priority sizes="100vw" duration={800} />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(250,248,243,0.18) 0%, rgba(250,248,243,0.12) 40%, rgba(250,248,243,0.88) 100%)' }} />
         <div className="absolute bottom-0 left-0 right-0 px-6 lg:px-16 pb-12 lg:pb-20">
           <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.2 }}>
@@ -105,6 +107,9 @@ export default function ServiceCateringPage({ lang, service, sp, langSlugMap, ot
         </p>
         <div>
           <Tag>{service.h2_offer}</Tag>
+          {service.offer_text && (
+            <p className="font-light mb-6" style={{ fontSize: '1rem', color: 'rgba(17,17,17,0.72)', lineHeight: 1.8 }}>{service.offer_text}</p>
+          )}
           <ul className="flex flex-col gap-4">
             {service.items.map((item, i) => (
               <li key={i} className="flex items-center gap-4 font-light" style={{ fontSize: '1.05rem', color: 'rgba(17,17,17,0.88)' }}>
@@ -117,6 +122,9 @@ export default function ServiceCateringPage({ lang, service, sp, langSlugMap, ot
 
       <section id="sc-whom" className="px-6 lg:px-16 pb-16 lg:pb-24 max-w-7xl mx-auto">
         <Tag>{service.h2_whom}</Tag>
+        {service.whom_text && (
+          <p className="font-light mb-8 max-w-3xl" style={{ fontSize: '1rem', color: 'rgba(17,17,17,0.72)', lineHeight: 1.8 }}>{service.whom_text}</p>
+        )}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-1 h-48 sm:h-64 lg:h-72">
           {events.map((ev, i) => (
             <div key={i} className="relative overflow-hidden">
@@ -140,7 +148,7 @@ export default function ServiceCateringPage({ lang, service, sp, langSlugMap, ot
 
       {/* Galerie ambiance */}
       <section className="grid grid-cols-2 gap-px h-56 sm:h-72">
-        {['/table1.jpeg', '/assiette6.jpeg'].map((src, i) => (
+        {['/ambiance.jpeg', '/assiette6.jpeg'].map((src, i) => (
           <div key={i} className="relative overflow-hidden">
             <ClickableImage src={src} alt="" fill className="object-cover" sizes="50vw" />
           </div>
@@ -149,6 +157,9 @@ export default function ServiceCateringPage({ lang, service, sp, langSlugMap, ot
 
       <section id="sc-approach" className="px-6 lg:px-16 py-16 lg:py-24 max-w-7xl mx-auto">
         <Tag>{service.h2_approach}</Tag>
+        {service.approach_text && (
+          <p className="font-light mb-10 max-w-3xl" style={{ fontSize: '1rem', color: 'rgba(17,17,17,0.72)', lineHeight: 1.8 }}>{service.approach_text}</p>
+        )}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 lg:gap-16">
           {promise.map((p, i) => (
             <div key={i}>
@@ -169,6 +180,7 @@ export default function ServiceCateringPage({ lang, service, sp, langSlugMap, ot
         </Link>
       </section>
 
+      <FaqSection faq={service.faq} lang={lang} />
       <OtherServices otherServices={otherServices} lang={lang} sp={sp} />
       <PageFooter lang={lang} />
       <WhatsAppButton />

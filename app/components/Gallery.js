@@ -9,7 +9,7 @@ const GALLERY_IMAGES = [
   { src: '/plate2.JPG', span: 'col-span-1 row-span-1' },
   { src: '/deco1.jpeg', span: 'col-span-1 row-span-1' },
   { src: '/assiette6.jpeg', span: 'col-span-1 row-span-1' },
-  { src: '/table1.jpeg', span: 'col-span-2 row-span-1' },
+  { src: '/dressage3.JPG', span: 'col-span-2 row-span-1' },
   { src: '/market2.JPG', span: 'col-span-1 row-span-1' },
   { src: '/products3.JPG', span: 'col-span-1 row-span-1' },
   { src: '/dressage6.jpeg', span: 'col-span-1 row-span-2' },

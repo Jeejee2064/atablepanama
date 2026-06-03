@@ -3,6 +3,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
+import FadeImage from './FadeImage';
 import Link from 'next/link';
 import { useLanguage } from './LanguageContext';
 
@@ -44,7 +45,7 @@ function ServiceCard({ service, data, index, lang }) {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="absolute inset-0"
         >
-          <Image
+          <FadeImage
             src={data.images[0]}
             alt={service.title}
             fill

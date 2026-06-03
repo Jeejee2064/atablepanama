@@ -2,7 +2,7 @@ import { Cormorant_Garamond, Jost } from "next/font/google";
 import { cookies } from "next/headers";
 import "./globals.css";
 import { LanguageProvider } from "./components/LanguageContext";
-import { SITE_URL, LOCAL_BUSINESS_SCHEMA } from "./lib/seo";
+import { SITE_URL, LOCAL_BUSINESS_SCHEMA, PERSON_SCHEMA } from "./lib/seo";
 
 const SUPPORTED_LANGS = ['es', 'en', 'fr'];
 
@@ -103,6 +103,10 @@ export default async function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_SCHEMA) }}
         />
       </head>
       <body className="min-h-full flex flex-col">

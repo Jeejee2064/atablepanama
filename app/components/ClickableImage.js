@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
+import FadeImage from './FadeImage';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function ClickableImage({ src, alt, fill, width, height, className, sizes, style, priority, objectPosition }) {
@@ -36,7 +37,7 @@ export default function ClickableImage({ src, alt, fill, width, height, classNam
         style={{ background: 'none', border: 'none', padding: 0, ...style }}
         aria-label="Voir en plein écran"
       >
-        <Image {...imgProps} style={{ objectPosition }} />
+        <FadeImage {...imgProps} style={{ objectPosition }} duration={500} />
         {/* Hover hint */}
         <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
           <span className="w-9 h-9 rounded-full flex items-center justify-center" style={{ background: 'rgba(20,20,20,0.55)', backdropFilter: 'blur(6px)' }}>

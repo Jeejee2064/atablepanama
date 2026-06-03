@@ -2,7 +2,7 @@
 
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import Image from 'next/image';
+import FadeImage from './FadeImage';
 
 export default function ParallaxBanner({ src, height = 'h-52 sm:h-64 lg:h-72' }) {
   const ref = useRef(null);
@@ -15,7 +15,7 @@ export default function ParallaxBanner({ src, height = 'h-52 sm:h-64 lg:h-72' })
   return (
     <div ref={ref} className={`relative overflow-hidden ${height}`}>
       <motion.div style={{ y }} className="absolute inset-0 scale-[1.72]">
-        <Image src={src} alt="" fill className="object-cover" sizes="100vw" />
+        <FadeImage src={src} alt="" fill className="object-cover" sizes="100vw" duration={700} />
       </motion.div>
       <div
         className="absolute inset-0"

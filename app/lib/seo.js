@@ -2,7 +2,7 @@ export const SITE_URL = 'https://www.atablepanama.com';
 
 export const LOCAL_BUSINESS_SCHEMA = {
   '@context': 'https://schema.org',
-  '@type': ['LocalBusiness', 'FoodEstablishment'],
+  '@type': ['LocalBusiness', 'FoodEstablishment', 'Organization'],
   name: 'À table Panama',
   url: SITE_URL,
   telephone: '+50765202230',
@@ -24,21 +24,34 @@ export const LOCAL_BUSINESS_SCHEMA = {
   description:
     'Consultoría gastronómica, catering de alto nivel y chef privado en Panama City. Fine dining consulting, high-end catering and private chef services.',
   image: `${SITE_URL}/og-home.jpg`,
-  logo: `${SITE_URL}/logoWhite.svg`,
+  logo: `${SITE_URL}/logoBlack.svg`,
+  founder: {
+    '@type': 'Person',
+    name: 'Christopher',
+    jobTitle: 'Chef & Founder',
+    worksFor: { '@type': 'Organization', name: 'À table Panama', url: SITE_URL },
+  },
   sameAs: [],
   areaServed: {
     '@type': 'City',
     name: 'Panama City',
-    containedInPlace: {
-      '@type': 'Country',
-      name: 'Panama',
-    },
+    containedInPlace: { '@type': 'Country', name: 'Panama' },
   },
   availableLanguage: [
     { '@type': 'Language', name: 'Spanish' },
     { '@type': 'Language', name: 'English' },
     { '@type': 'Language', name: 'French' },
   ],
+};
+
+export const PERSON_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Christopher',
+  jobTitle: 'Chef & Founder',
+  description: 'French chef with over fifteen years of experience in prestigious kitchens of Europe and Latin America. Founder of À table Panama.',
+  worksFor: { '@type': 'Organization', name: 'À table Panama', url: SITE_URL },
+  url: SITE_URL,
 };
 
 const OG_FALLBACKS = {
@@ -55,7 +68,7 @@ const HOME_META = {
     locale: 'es_PA',
   },
   en: {
-    title: 'À table Panama — Fine Dining & Gastronomy Services in Panama City',
+    title: 'À table Panama — Private Chef, Catering & Fine Dining',
     description: 'Luxury catering, private chef, restaurant consulting and exclusive SupperClub in Panama City. Exceptional gastronomy for every occasion.',
     keywords: 'catering panama city, private chef panama city, restaurant consulting panama city, supper club panama city, fine dining panama',
     locale: 'en_US',
@@ -94,6 +107,7 @@ export const SEO_META = {
       es: `${SITE_URL}/es/asesoria-restaurantes-panama-city`,
       en: `${SITE_URL}/en/restaurant-consulting-panama-city`,
       fr: `${SITE_URL}/fr/conseil-restauration-panama-city`,
+      'x-default': `${SITE_URL}/es/asesoria-restaurantes-panama-city`,
     },
     serviceSchema: {
       name: 'Asesoría para Restaurantes en Panama City',
@@ -116,6 +130,7 @@ export const SEO_META = {
       es: `${SITE_URL}/es/asesoria-restaurantes-panama-city`,
       en: `${SITE_URL}/en/restaurant-consulting-panama-city`,
       fr: `${SITE_URL}/fr/conseil-restauration-panama-city`,
+      'x-default': `${SITE_URL}/es/asesoria-restaurantes-panama-city`,
     },
     serviceSchema: {
       name: 'Restaurant Consulting in Panama City',
@@ -138,6 +153,7 @@ export const SEO_META = {
       es: `${SITE_URL}/es/asesoria-restaurantes-panama-city`,
       en: `${SITE_URL}/en/restaurant-consulting-panama-city`,
       fr: `${SITE_URL}/fr/conseil-restauration-panama-city`,
+      'x-default': `${SITE_URL}/es/asesoria-restaurantes-panama-city`,
     },
     serviceSchema: {
       name: 'Conseil en Restauration à Panama City',
@@ -160,6 +176,7 @@ export const SEO_META = {
       es: `${SITE_URL}/es/catering-eventos-panama-city`,
       en: `${SITE_URL}/en/catering-events-panama-city`,
       fr: `${SITE_URL}/fr/traiteur-evenements-panama-city`,
+      'x-default': `${SITE_URL}/es/catering-eventos-panama-city`,
     },
     serviceSchema: {
       name: 'Catering para Eventos en Panama City',
@@ -182,6 +199,7 @@ export const SEO_META = {
       es: `${SITE_URL}/es/catering-eventos-panama-city`,
       en: `${SITE_URL}/en/catering-events-panama-city`,
       fr: `${SITE_URL}/fr/traiteur-evenements-panama-city`,
+      'x-default': `${SITE_URL}/es/catering-eventos-panama-city`,
     },
     serviceSchema: {
       name: 'Premium Catering Services in Panama City',
@@ -204,6 +222,7 @@ export const SEO_META = {
       es: `${SITE_URL}/es/catering-eventos-panama-city`,
       en: `${SITE_URL}/en/catering-events-panama-city`,
       fr: `${SITE_URL}/fr/traiteur-evenements-panama-city`,
+      'x-default': `${SITE_URL}/es/catering-eventos-panama-city`,
     },
     serviceSchema: {
       name: 'Traiteur Haut de Gamme à Panama City',
@@ -226,6 +245,7 @@ export const SEO_META = {
       es: `${SITE_URL}/es/chef-a-domicilio-panama-city`,
       en: `${SITE_URL}/en/private-chef-panama-city`,
       fr: `${SITE_URL}/fr/chef-a-domicile-panama-city`,
+      'x-default': `${SITE_URL}/es/chef-a-domicilio-panama-city`,
     },
     serviceSchema: {
       name: 'Chef a Domicilio en Panama City',
@@ -248,6 +268,7 @@ export const SEO_META = {
       es: `${SITE_URL}/es/chef-a-domicilio-panama-city`,
       en: `${SITE_URL}/en/private-chef-panama-city`,
       fr: `${SITE_URL}/fr/chef-a-domicile-panama-city`,
+      'x-default': `${SITE_URL}/es/chef-a-domicilio-panama-city`,
     },
     serviceSchema: {
       name: 'Private Chef in Panama City',
@@ -270,6 +291,7 @@ export const SEO_META = {
       es: `${SITE_URL}/es/chef-a-domicilio-panama-city`,
       en: `${SITE_URL}/en/private-chef-panama-city`,
       fr: `${SITE_URL}/fr/chef-a-domicile-panama-city`,
+      'x-default': `${SITE_URL}/es/chef-a-domicilio-panama-city`,
     },
     serviceSchema: {
       name: 'Chef à Domicile à Panama City',
@@ -291,6 +313,7 @@ export const SEO_META = {
       es: `${SITE_URL}/es/supper-club-panama-city`,
       en: `${SITE_URL}/en/supper-club-panama-city`,
       fr: `${SITE_URL}/fr/supper-club-panama-city`,
+      'x-default': `${SITE_URL}/es/supper-club-panama-city`,
     },
     serviceSchema: {
       name: 'SupperClub by À TABLE Panama City',
@@ -311,6 +334,7 @@ export const SEO_META = {
       es: `${SITE_URL}/es/supper-club-panama-city`,
       en: `${SITE_URL}/en/supper-club-panama-city`,
       fr: `${SITE_URL}/fr/supper-club-panama-city`,
+      'x-default': `${SITE_URL}/es/supper-club-panama-city`,
     },
     serviceSchema: {
       name: 'SupperClub by À TABLE Panama City',
@@ -331,6 +355,7 @@ export const SEO_META = {
       es: `${SITE_URL}/es/supper-club-panama-city`,
       en: `${SITE_URL}/en/supper-club-panama-city`,
       fr: `${SITE_URL}/fr/supper-club-panama-city`,
+      'x-default': `${SITE_URL}/es/supper-club-panama-city`,
     },
     serviceSchema: {
       name: 'SupperClub by À TABLE Panama City',

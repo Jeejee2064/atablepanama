@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import FadeImage from '../FadeImage';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import LangSwitcher from '../LangSwitcher';
@@ -8,6 +9,7 @@ import WhatsAppButton from '../WhatsAppButton';
 import PageFooter from '../PageFooter';
 import ClickableImage from '../ClickableImage';
 import PageAnchors from '../PageAnchors';
+import FaqSection from '../FaqSection';
 
 function Tag({ children }) {
   return <p className="text-[0.6rem] tracking-[0.35em] uppercase font-medium mb-6" style={{ color: '#e2b84a' }}>{children}</p>;
@@ -35,7 +37,7 @@ export default function ServiceSupperclubPage({ lang, service, sp, langSlugMap, 
 
       {/* Hero — plein écran, atmosphere de dîner secret */}
       <section className="relative h-screen min-h-[600px] overflow-hidden">
-        <Image src="/table1.JPG" alt="SupperClub by À TABLE" fill className="object-cover" priority sizes="100vw" />
+        <FadeImage src="/dressage7.jpeg" alt="SupperClub by À TABLE" fill className="object-cover" priority sizes="100vw" duration={800} />
         {/* Overlay profond, ambiance nuit */}
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(10,22,40,0.35) 0%, rgba(10,22,40,0.15) 35%, rgba(10,22,40,0.82) 100%)' }} />
 
@@ -178,6 +180,7 @@ export default function ServiceSupperclubPage({ lang, service, sp, langSlugMap, 
         </Link>
       </section>
 
+      <FaqSection faq={service.faq} lang={lang} />
       <OtherServices otherServices={otherServices} lang={lang} sp={sp} />
       <PageFooter lang={lang} />
       <WhatsAppButton />

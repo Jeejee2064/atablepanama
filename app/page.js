@@ -22,7 +22,15 @@ export async function generateMetadata() {
     title: m.title,
     description: m.description,
     keywords: m.keywords,
-    alternates: { canonical: m.canonical },
+    alternates: {
+      canonical: m.canonical,
+      languages: {
+        es: SITE_URL,
+        en: SITE_URL,
+        fr: SITE_URL,
+        'x-default': SITE_URL,
+      },
+    },
     openGraph: {
       type: 'website',
       siteName: 'À table Panama',
