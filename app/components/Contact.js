@@ -5,7 +5,7 @@ import { motion, useInView, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { useLanguage } from './LanguageContext';
 
-const WHATSAPP_NUMBER = '50765202230';
+const WHATSAPP_NUMBER = '50764960869';
 
 function WhatsAppIcon() {
   return (
@@ -130,10 +130,10 @@ export default function Contact() {
                   <PhoneIcon />
                 </div>
                 <a
-                  href="tel:+50765202230"
+                  href="tel:+50764960869"
                   className="text-[#111111]/85 text-base hover:text-gold transition-colors duration-300 tracking-wide"
                 >
-                  +507 6520-2230
+                  +507 6496-0869
                 </a>
               </div>
 

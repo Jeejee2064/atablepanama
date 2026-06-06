@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from './LanguageContext';
 
-const WHATSAPP_NUMBER = '50765202230';
+const WHATSAPP_NUMBER = '50764960869';
 
 export default function WhatsAppButton() {
   const { t } = useLanguage();

@@ -118,7 +118,7 @@ export default function ServiceSupperclubPage({ lang, service, sp, langSlugMap, 
           </p>
         </div>
         <div className="relative h-64 lg:h-96 overflow-hidden">
-          <ClickableImage src="/deco3.jpeg" alt="" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
+          <ClickableImage src="/deco3.jpeg" alt="Décoration élégante pour soirée exclusive — SupperClub Panama" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(10,22,40,0.3) 0%, transparent 60%)' }} />
         </div>
       </section>
@@ -126,9 +126,14 @@ export default function ServiceSupperclubPage({ lang, service, sp, langSlugMap, 
 
       {/* Galerie ambiance SupperClub */}
       <section className="grid grid-cols-2 lg:grid-cols-4 gap-px h-48 sm:h-64">
-        {['/table2.JPG', '/plate2.JPG', '/assiette7.jpeg', '/deco2.jpeg'].map((src, i) => (
+        {[
+          ['/table2.JPG', 'Table dressée pour réception exclusive Panama City'],
+          ['/plate2.JPG', 'Menu dégustation plusieurs services — SupperClub'],
+          ['/assiette7.jpeg', 'Plat gastronomique — soirée privée Panama'],
+          ['/deco2.jpeg', 'Mise en place raffinée — SupperClub by À TABLE'],
+        ].map(([src, alt], i) => (
           <div key={i} className="relative overflow-hidden">
-            <ClickableImage src={src} alt="" fill className="object-cover" sizes="(max-width:1024px) 50vw, 25vw" />
+            <ClickableImage src={src} alt={alt} fill className="object-cover" sizes="(max-width:1024px) 50vw, 25vw" />
           </div>
         ))}
       </section>
@@ -163,7 +168,7 @@ export default function ServiceSupperclubPage({ lang, service, sp, langSlugMap, 
           </Link>
         </div>
         <div className="relative h-64 lg:h-80 overflow-hidden">
-          <ClickableImage src="/products7.JPG" alt="" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
+          <ClickableImage src="/products7.JPG" alt="Produits gastronomiques frais — SupperClub Panama City" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
         </div>
       </section>
 

@@ -96,8 +96,8 @@ export default function PageFooter({ lang = 'es' }) {
               Contact
             </p>
             <div className="flex flex-col gap-2.5">
-              <a href="tel:+50765202230" className="text-sm font-light" style={{ color: 'rgba(17,17,17,0.72)', textDecoration: 'none' }}>
-                +507 6520-2230
+              <a href="tel:+50764960869" className="text-sm font-light" style={{ color: 'rgba(17,17,17,0.72)', textDecoration: 'none' }}>
+                +507 6496-0869
               </a>
               <a href="mailto:atablepanama@gmail.com" className="text-sm font-light" style={{ color: 'rgba(17,17,17,0.72)', textDecoration: 'none' }}>
                 atablepanama@gmail.com

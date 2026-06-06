@@ -5,7 +5,7 @@ export const LOCAL_BUSINESS_SCHEMA = {
   '@type': ['LocalBusiness', 'FoodEstablishment', 'Organization'],
   name: 'À table Panama',
   url: SITE_URL,
-  telephone: '+50765202230',
+  telephone: '+50764960869',
   email: 'atablepanama@gmail.com',
   address: {
     '@type': 'PostalAddress',
@@ -374,7 +374,7 @@ export function buildServiceSchema(serviceSchema) {
       '@type': 'LocalBusiness',
       name: 'À table Panama',
       url: SITE_URL,
-      telephone: '+50765202230',
+      telephone: '+50764960869',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Local 1, Edificio Antigua Domingo, Plaza Santa Ana',

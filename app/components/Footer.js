@@ -85,8 +85,8 @@ export default function Footer() {
               Contact
             </p>
             <div className="flex flex-col gap-2.5">
-              <a href="tel:+50765202230" className="text-sm text-[#111111]/75 hover:text-gold transition-colors font-light" style={{ textDecoration: 'none' }}>
-                +507 6520-2230
+              <a href="tel:+50764960869" className="text-sm text-[#111111]/75 hover:text-gold transition-colors font-light" style={{ textDecoration: 'none' }}>
+                +507 6496-0869
               </a>
               <a href="mailto:atablepanama@gmail.com" className="text-sm text-[#111111]/75 hover:text-gold transition-colors font-light" style={{ textDecoration: 'none' }}>
                 atablepanama@gmail.com
