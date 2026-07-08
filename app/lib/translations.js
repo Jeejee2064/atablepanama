@@ -114,11 +114,6 @@ export const translations = {
         role: 'Directora de Relaciones',
         bio: 'Clémence es el enlace perfecto entre la visión culinaria y la experiencia del cliente. Con su calidez y profesionalismo, garantiza que cada interacción con À table Panama sea tan memorable como los platos que servimos.',
       },
-      julio: {
-        name: 'Julio',
-        role: 'Chef Internacional',
-        bio: 'Graduado de Le Cordon Bleu Madrid y licenciado en Artes Culinarias, Julio aporta una sólida experiencia en hoteles y restaurantes de Panamá y Estados Unidos. Especializado en cocina caliente, control de calidad y operación gastronómica, se distingue por su disciplina, creatividad y compromiso con la excelencia culinaria.',
-      },
     },
     contact: {
       title: 'Contacto',
@@ -128,7 +123,7 @@ export const translations = {
       phone: 'Teléfono (opcional)',
       message: 'Su mensaje',
       send: 'Enviar mensaje',
-      address: 'Local 1, Edificio Antigua Domingo, Plaza Santa Ana, Ciudad de Panamá',
+      address: 'PH Rivage, 37a, Av. Vasco Nuñez de Balboa, Ciudad de Panamá',
       whatsapp: 'Escribir por WhatsApp',
       successMsg: 'Mensaje enviado. Le contactaremos pronto.',
       namePlaceholder: 'Su nombre completo',
@@ -263,11 +258,6 @@ export const translations = {
         role: 'Relations Director',
         bio: 'Clémence is the perfect link between culinary vision and client experience. With her warmth and professionalism, she ensures that every interaction with À table Panama is as memorable as the dishes we serve.',
       },
-      julio: {
-        name: 'Julio',
-        role: 'International Chef',
-        bio: 'A graduate of Le Cordon Bleu Madrid with a degree in Culinary Arts, Julio brings extensive experience from hotels and restaurants across Panama and the United States. Specializing in hot kitchen, quality control and gastronomic operations, he stands out for his discipline, creativity and unwavering commitment to culinary excellence.',
-      },
     },
     contact: {
       title: 'Contact',
@@ -277,7 +267,7 @@ export const translations = {
       phone: 'Phone (optional)',
       message: 'Your message',
       send: 'Send message',
-      address: 'Local 1, Edificio Antigua Domingo, Plaza Santa Ana, Panama City',
+      address: 'PH Rivage, 37a, Av. Vasco Nuñez de Balboa, Panama City',
       whatsapp: 'Message on WhatsApp',
       successMsg: 'Message sent. We will contact you soon.',
       namePlaceholder: 'Your full name',
@@ -412,11 +402,6 @@ export const translations = {
         role: 'Directrice des Relations',
         bio: "Clémence est le lien parfait entre la vision culinaire et l'expérience client. Avec sa chaleur et son professionnalisme, elle veille à ce que chaque interaction avec À table Panama soit aussi mémorable que les plats que nous servons.",
       },
-      julio: {
-        name: 'Julio',
-        role: 'Chef International',
-        bio: "Diplômé du Cordon Bleu Madrid et titulaire d'un Bachelor en Arts Culinaires, Julio apporte une solide expérience acquise dans des hôtels et restaurants au Panama et aux États-Unis. Spécialisé en cuisine chaude, contrôle qualité et opération gastronomique, il se distingue par sa discipline, sa créativité et son engagement envers l'excellence culinaire.",
-      },
     },
     contact: {
       title: 'Contact',
@@ -426,7 +411,7 @@ export const translations = {
       phone: 'Téléphone (optionnel)',
       message: 'Votre message',
       send: 'Envoyer le message',
-      address: 'Local 1, Edificio Antigua Domingo, Plaza Santa Ana, Panama City',
+      address: 'PH Rivage, 37a, Av. Vasco Nuñez de Balboa, Panama City',
       whatsapp: 'Écrire sur WhatsApp',
       successMsg: 'Message envoyé. Nous vous contacterons bientôt.',
       namePlaceholder: 'Votre nom complet',

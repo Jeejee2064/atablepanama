@@ -100,7 +100,7 @@ export default function Footer() {
                 @atable.panama
               </a>
               <p className="text-sm text-[#111111]/55 font-light leading-relaxed">
-                Local 1, Edificio Antigua Domingo<br />Plaza Santa Ana, Panama City
+                PH Rivage<br />37a, Av. Vasco Nuñez de Balboa, Panamá
               </p>
             </div>
           </div>

@@ -111,7 +111,7 @@ export default function PageFooter({ lang = 'es' }) {
                 @atable.panama
               </a>
               <p className="text-sm font-light leading-relaxed" style={{ color: 'rgba(17,17,17,0.45)' }}>
-                Local 1, Edificio Antigua Domingo<br />Plaza Santa Ana, Panama City
+                PH Rivage<br />37a, Av. Vasco Nuñez de Balboa, Panamá
               </p>
             </div>
           </div>
