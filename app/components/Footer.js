@@ -100,7 +100,7 @@ export default function Footer() {
                 @atable.panama
               </a>
               <p className="text-sm text-[#111111]/55 font-light leading-relaxed">
-                PH Rivage<br />Av. Vasco Nuñez de Balboa, Panamá
+                Panamá
               </p>
             </div>
           </div>
