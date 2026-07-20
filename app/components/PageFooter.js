@@ -111,7 +111,7 @@ export default function PageFooter({ lang = 'es' }) {
                 @atable.panama
               </a>
               <p className="text-sm font-light leading-relaxed" style={{ color: 'rgba(17,17,17,0.45)' }}>
-                PH Rivage<br />37a, Av. Vasco Nuñez de Balboa, Panamá
+                PH Rivage<br />Av. Vasco Nuñez de Balboa, Panamá
               </p>
             </div>
           </div>

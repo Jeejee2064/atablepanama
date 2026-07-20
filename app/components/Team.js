@@ -7,7 +7,6 @@ import { useLanguage } from './LanguageContext';
 
 const MEMBERS = [
   { key: 'chris', image: '/chris.jpeg' },
-  { key: 'clemence', image: '/clemence.png' },
 ];
 
 function MemberCard({ member, data, index }) {
@@ -82,7 +81,7 @@ export default function Team() {
           </motion.h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 gap-10 lg:gap-14 max-w-sm mx-auto">
           {MEMBERS.map((member, i) => (
             <MemberCard key={member.key} member={member} data={t.team[member.key]} index={i} />
           ))}

@@ -94,7 +94,7 @@ export default function ServiceAsesoriaPage({ lang, service, sp, langSlugMap, ot
           </motion.div>
         </div>
         <div className="relative h-64 sm:h-80 lg:h-auto order-1 lg:order-2 overflow-hidden">
-          <FadeImage src="/market2.JPG" alt={service.title} fill className="object-cover" priority sizes="(max-width:1024px) 100vw, 50vw" duration={800} />
+          <FadeImage src="/produits2.png" alt={service.title} fill className="object-cover" priority sizes="(max-width:1024px) 100vw, 50vw" duration={800} />
           <div className="absolute inset-0 hidden lg:block" style={{ background: 'linear-gradient(to right, #faf8f3 0%, transparent 35%)' }} />
           <div className="absolute inset-0 lg:hidden" style={{ background: 'linear-gradient(to top, #faf8f3 0%, transparent 60%)' }} />
         </div>
@@ -164,7 +164,7 @@ export default function ServiceAsesoriaPage({ lang, service, sp, langSlugMap, ot
       {/* Pour qui + image */}
       <section id="sc-whom" className="grid grid-cols-1 lg:grid-cols-2">
         <div className="relative h-64 sm:h-80 lg:h-auto overflow-hidden order-2 lg:order-1">
-          <ClickableImage src="/market4.JPG" alt="Ingrédients" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
+          <ClickableImage src="/ingredients.png" alt="Ingrédients" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
         </div>
         <div className="px-6 lg:px-14 py-14 lg:py-20 bg-[#faf8f3] flex flex-col justify-center order-1 lg:order-2">
           <Tag>{service.h2_whom}</Tag>

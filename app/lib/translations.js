@@ -109,11 +109,6 @@ export const translations = {
         role: 'Chef & Fundador',
         bio: 'Con más de quince años de trayectoria en las más prestigiosas cocinas de Europa y América Latina, Christopher aporta una visión refinada y una técnica impecable a cada proyecto. Su pasión por los sabores auténticos y los productos de calidad es el alma de À table Panama.',
       },
-      clemence: {
-        name: 'Clémence',
-        role: 'Directora de Relaciones',
-        bio: 'Clémence es el enlace perfecto entre la visión culinaria y la experiencia del cliente. Con su calidez y profesionalismo, garantiza que cada interacción con À table Panama sea tan memorable como los platos que servimos.',
-      },
     },
     contact: {
       title: 'Contacto',
@@ -123,7 +118,7 @@ export const translations = {
       phone: 'Teléfono (opcional)',
       message: 'Su mensaje',
       send: 'Enviar mensaje',
-      address: 'PH Rivage, 37a, Av. Vasco Nuñez de Balboa, Ciudad de Panamá',
+      address: 'PH Rivage, Av. Vasco Nuñez de Balboa, Ciudad de Panamá',
       whatsapp: 'Escribir por WhatsApp',
       successMsg: 'Mensaje enviado. Le contactaremos pronto.',
       namePlaceholder: 'Su nombre completo',
@@ -253,11 +248,6 @@ export const translations = {
         role: 'Chef & Founder',
         bio: 'With over fifteen years of experience in the most prestigious kitchens of Europe and Latin America, Christopher brings a refined vision and impeccable technique to every project. His passion for authentic flavors and quality products is the soul of À table Panama.',
       },
-      clemence: {
-        name: 'Clémence',
-        role: 'Relations Director',
-        bio: 'Clémence is the perfect link between culinary vision and client experience. With her warmth and professionalism, she ensures that every interaction with À table Panama is as memorable as the dishes we serve.',
-      },
     },
     contact: {
       title: 'Contact',
@@ -267,7 +257,7 @@ export const translations = {
       phone: 'Phone (optional)',
       message: 'Your message',
       send: 'Send message',
-      address: 'PH Rivage, 37a, Av. Vasco Nuñez de Balboa, Panama City',
+      address: 'PH Rivage, Av. Vasco Nuñez de Balboa, Panama City',
       whatsapp: 'Message on WhatsApp',
       successMsg: 'Message sent. We will contact you soon.',
       namePlaceholder: 'Your full name',
@@ -397,11 +387,6 @@ export const translations = {
         role: 'Chef & Fondateur',
         bio: "Fort de plus de quinze ans d'expérience dans les cuisines les plus prestigieuses d'Europe et d'Amérique latine, Christopher apporte une vision raffinée et une technique irréprochable à chaque projet. Sa passion pour les saveurs authentiques et les produits de qualité est l'âme d'À table Panama.",
       },
-      clemence: {
-        name: 'Clémence',
-        role: 'Directrice des Relations',
-        bio: "Clémence est le lien parfait entre la vision culinaire et l'expérience client. Avec sa chaleur et son professionnalisme, elle veille à ce que chaque interaction avec À table Panama soit aussi mémorable que les plats que nous servons.",
-      },
     },
     contact: {
       title: 'Contact',
@@ -411,7 +396,7 @@ export const translations = {
       phone: 'Téléphone (optionnel)',
       message: 'Votre message',
       send: 'Envoyer le message',
-      address: 'PH Rivage, 37a, Av. Vasco Nuñez de Balboa, Panama City',
+      address: 'PH Rivage, Av. Vasco Nuñez de Balboa, Panama City',
       whatsapp: 'Écrire sur WhatsApp',
       successMsg: 'Message envoyé. Nous vous contacterons bientôt.',
       namePlaceholder: 'Votre nom complet',

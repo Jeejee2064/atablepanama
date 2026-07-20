@@ -9,7 +9,7 @@ export const LOCAL_BUSINESS_SCHEMA = {
   email: 'atablepanama@gmail.com',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'PH Rivage, 37a, Av. Vasco Nuñez de Balboa',
+    streetAddress: 'PH Rivage, Av. Vasco Nuñez de Balboa',
     addressLocality: 'Panamá',
     addressRegion: 'Provincia de Panamá',
     addressCountry: 'PA',
@@ -377,7 +377,7 @@ export function buildServiceSchema(serviceSchema) {
       telephone: '+50764960869',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'PH Rivage, 37a, Av. Vasco Nuñez de Balboa',
+        streetAddress: 'PH Rivage, Av. Vasco Nuñez de Balboa',
         addressLocality: 'Panamá',
         addressCountry: 'PA',
       },

@@ -10,7 +10,7 @@ const GALLERY_IMAGES = [
   { src: '/deco1.jpeg', span: 'col-span-1 row-span-1', alt: 'Décoration de table raffinée — catering Panama City' },
   { src: '/assiette6.jpeg', span: 'col-span-1 row-span-1', alt: 'Plat gastronomique dressé — fine dining Panama' },
   { src: '/dressage3.JPG', span: 'col-span-2 row-span-1', alt: 'Mise en place pour réception — traiteur Panama City' },
-  { src: '/market2.JPG', span: 'col-span-1 row-span-1', alt: 'Produits frais du marché — sourcing Panama City' },
+  { src: '/market3.JPG', span: 'col-span-1 row-span-1', alt: 'Produits frais du marché — sourcing Panama City' },
   { src: '/products3.JPG', span: 'col-span-1 row-span-1', alt: 'Ingrédients frais sélectionnés — asesoría gastronomique' },
   { src: '/dressage6.jpeg', span: 'col-span-1 row-span-2', alt: 'Ambiance dîner privé — SupperClub Panama City' },
   { src: '/spice1.JPG', span: 'col-span-1 row-span-1', alt: 'Épices et ingrédients de qualité — haute gastronomie Panama' },
